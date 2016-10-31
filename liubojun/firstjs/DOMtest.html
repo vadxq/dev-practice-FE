@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>操作DOM样式</title>
+	<style type="text/css">
+		span {
+			display: inline-block;
+			width: 120px;
+			background-color: purple;
+			color: #fff;
+		}
+		div {
+			width: 200px;
+			margin-bottom: 15px;
+		}
+		ul li {
+			list-style: none;
+			border:1px solid #000;
+			border-radius: 5px;
+			width: 50px;
+			text-align: center;
+			background-color: #3893eb;
+		}
+		.two{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function mouseover( ) {
+			var a=document.getElementById("one");
+			a.style.display="block";
+		}
+		function mouseout( ) {
+			var b=document.getElementById("one");
+			b.style.display="none";
+		}
+		function click( ) {
+			document.getElementById("three").style.color="red";
+		}
+	</script>
+</head>
+<body>
+	<span onmouseover="mouseover()" onmouseout="mouseout()">放上来试试</span>
+		<div id="one"  style="display:none;">
+			<img src="../pic/app_QRCode.png" width="200px;" height="200px;">
+ 		</div>
+<ul>
+	<li>列表1</li>
+	<li onclick="click()">列表2</li>
+	<li>列表3</li>
+	<li>列表4</li>
+	<li id="three">列表5</li>
+</ul>
+<ul>
+	<li class="two">物品1</li>
+	<li class="two">物品2</li>
+	<li class="two">物品3</li>
+	<li class="two">物品4</li>
+	<li class="two">物品5</li>
+</ul>
+	<input type="button" value="更多" />
+</body>
+</html>

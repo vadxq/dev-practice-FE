@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串</title>
+	<style type="text/css">
+		div {
+			border:1px solid #000;
+			width: 400px;
+			margin-bottom: 15px;
+			padding:10px;
+			word-break: break-all;
+		}
+		span {
+			display: inline-block;
+			width: 400px;
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var str="wealllovencuhome2001-2016ncuhome";
+		function character1( ) {
+			alert(str.charAt(6));
+		}
+		function character2( ) {
+			alert(str.length);
+		}
+		function character3( ) {
+		 	document.getElementById("one").innerHTML="wealllovenauhome2001-2016ncuhome";
+		}
+		function character4( ) {
+			var ch=document.getElementById("one").innerHTML;
+			ch=ch+"ers";
+			document.getElementById('one').innerHTML=ch;
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<span id="one">wealllovencuhome2001-2016ncuhome</span>
+	</div>
+	<input type="button" onclick="character1()" value="有惊喜" />
+	<input type="button" onclick="character2()" value="滴滴滴" />
+	<input type="button" onclick="character3()" value="你再点下" />
+	<input type="button" onclick="character4()" value="最后点一次" />
+</body> 
+</html>
