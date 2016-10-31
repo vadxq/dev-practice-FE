@@ -26,7 +26,7 @@
 		#hd {
 			min-width: 960px;
 			border-bottom:0 solid #c2d5e3;
-			background: url(nv.png)0 116px repeat-x;
+			background: url(pic/nv.png)0 116px repeat-x;
 			height: 164px;
 		}
 		#hd .wp {
@@ -61,7 +61,7 @@
 			display: block;
 			left: 173px;
 			bottom: 39px;
-			background-image: url(QRCode_tg.png);
+			background-image: url(pic/QRCode_tg.png);
 			padding-left: 29px;
 			line-height: 21px;
 			font-family: "Microsoft YaHei", Tahoma, Helvetica, SimSun, sans-serif;
@@ -121,7 +121,7 @@
 		}
 		.arrowup {
 			position: absolute;
-			background: url(imghack.png) no-repeat -80px -80px;
+			background: url(pic/imghack.png) no-repeat -80px -80px;
 			display: inline-block;
 			height: 7px;
 			width: 14px;
@@ -130,7 +130,7 @@
 			left: 51px;
 		}
 		.switchwidth {
-			background:url(imghack.png)no-repeat -22px 5px transparent;
+			background:url(pic/imghack.png)no-repeat -22px 5px transparent;
 			width: 20px;
 			height: 22px;
 			display:block;
@@ -138,7 +138,7 @@
 			text-indent: -9999px;
 		}
 		#searchbar {
-			background: url(search_bg.png)no-repeat 0 0 transparent;
+			background: url(pic/search_bg.png)no-repeat 0 0 transparent;
 			width: 339px;
 			float: right;
 			height: 30px;
@@ -199,7 +199,7 @@
 			padding-right: 0px;
 			width:13px;
 			height: 12px;
-			background: url(imghack.png) no-repeat -58px -75px transparent;
+			background: url(pic/imghack.png) no-repeat -58px -75px transparent;
 		}
 		#qmenu_menu {
 			box-shadow: 0 8px 16px -6px gray;
@@ -242,7 +242,7 @@
 		#nv_fixed {
 			height:48px;
 			width: 100%;
-			background: url(nv.png)repeat-x 0 0;
+			background: url(pic/nv.png)repeat-x 0 0;
 			display: none;
 			position: fixed;
 			top:0;
@@ -291,7 +291,7 @@
 			cursor: pointer;
 			z-index: 99;
 			display: none;
-			background: url(geek_4.png) no-repeat;
+			background: url(pic/geek_4.png) no-repeat;
 		}
 		.prev {
 			left:10px;
@@ -425,13 +425,13 @@
     		margin-right: 15px;
 		}
 		.article_info_right_0 {
-			background: url(geek_2.png)no-repeat 0px 0px;
+			background: url(pic/geek_2.png)no-repeat 0px 0px;
 		}
 		.article_info_right_1 {
-			background: url(geek_2.png)no-repeat -68px 0px;
+			background: url(pic/geek_2.png)no-repeat -68px 0px;
 		}
 		span.article_info_right_2 {
-		    background: url(forum_3.png) no-repeat -118px -2px;
+		    background: url(pic/forum_3.png) no-repeat -118px -2px;
 		    margin-right: 0;
 		    cursor: pointer;
 		    position: relative;
@@ -448,7 +448,7 @@
 			height: 40px;
 			padding-top: 7px;
 			padding-left: 2px;
-			background: url(forum_4.png)no-repeat 0px 0px;
+			background: url(pic/forum_4.png)no-repeat 0px 0px;
 			text-align: left;
 			z-index: 999;
 			display: none;
@@ -462,13 +462,13 @@
 			text-indent: -9999px;
 		}
 		.share_sina {
-			background: url(forum_3.png)no-repeat 0px 0px;
+			background: url(pic/forum_3.png)no-repeat 0px 0px;
 		}
 		.share_weixin {
-			background: url(forum_3.png)no-repeat -43px 0px;
+			background: url(pic/forum_3.png)no-repeat -43px 0px;
 		}
 		.share_tencent {
-			background: url(forum_3.png)no-repeat -85px 0px;
+			background: url(pic/forum_3.png)no-repeat -85px 0px;
 		}
 		.article_info_right_2:hover strong {
 			display:inline-block; 
@@ -514,7 +514,7 @@
 			display: inline-block;
 			width: 250px;
 			height: 45px;
-			background: url(post_btn_big.png)0 0 no-repeat rgba(0,0,0,0);
+			background: url(pic/post_btn_big.png)0 0 no-repeat rgba(0,0,0,0);
 		}
 		.big_post_btn a:hover{
 			background-position: 0 -50px;
@@ -532,10 +532,10 @@
 			width: 218px;
 		}
 		.pf_sign {
-			background: rgba(0,0,0,0) url(signin_2.png) no-repeat scroll left top;
+			background: rgba(0,0,0,0) url(pic/signin_2.png) no-repeat scroll left top;
 		}
 		.pf_sign:hover {
-			background: rgba(0,0,0,0) url(signin_2.png) no-repeat scroll left -80px;
+			background: rgba(0,0,0,0) url(pic/signin_2.png) no-repeat scroll left -80px;
 		}
 		.part_footer {
 			height: 64px;
@@ -823,7 +823,7 @@
 			text-align: center;
 			color:#787878;
 			text-decoration: none;
-			background:url(scrolltop.png) no-repeat 0 0;
+			background:url(pic/scrolltop.png) no-repeat 0 0;
 			border-top: 0 solid #cdcdcd; 
 		}
 		a.scrolltopa:hover {
