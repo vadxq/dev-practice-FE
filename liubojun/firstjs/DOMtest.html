@@ -9,10 +9,26 @@
 			width: 120px;
 			background-color: purple;
 			color: #fff;
+			margin-top: 20px;
+			margin-bottom: 10px;
 		}
 		div {
 			width: 200px;
 			margin-bottom: 15px;
+		}
+		img {
+			display:none; 
+			width:200px; 
+			height:200px;
+			border: 1px solid orange;
+			border-radius: 5px;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		ul {
+			margin:0;
 		}
 		ul li {
 			list-style: none;
@@ -20,9 +36,9 @@
 			border-radius: 5px;
 			width: 50px;
 			text-align: center;
-			background-color: #3893eb;
+			background-color:green;
 		}
-		.two{
+		#two {
 			display: none;
 		}
 	</style>
@@ -35,30 +51,35 @@
 			var b=document.getElementById("one");
 			b.style.display="none";
 		}
-		function click( ) {
-			document.getElementById("three").style.color="red";
-		}
 	</script>
 </head>
 <body>
-	<span onmouseover="mouseover()" onmouseout="mouseout()">放上来试试</span>
-		<div id="one"  style="display:none;">
-			<img src="../pic/app_QRCode.png" width="200px;" height="200px;">
- 		</div>
+	<div >
+		<span onmouseover="mouseover()" onmouseout="mouseout()">放上来试试</span>
+		<img src="../pic/app_QRCode.png" id="one" >
+	</div>
 <ul>
 	<li>列表1</li>
-	<li onclick="click()">列表2</li>
+	<li onclick="change()">列表2</li>
 	<li>列表3</li>
 	<li>列表4</li>
 	<li id="three">列表5</li>
 </ul>
-<ul>
-	<li class="two">物品1</li>
-	<li class="two">物品2</li>
-	<li class="two">物品3</li>
-	<li class="two">物品4</li>
-	<li class="two">物品5</li>
+<ul id="two">
+	<li>物品1</li>
+	<li>物品2</li>
+	<li>物品3</li>
+	<li>物品4</li>
+	<li>物品5</li>
 </ul>
-	<input type="button" value="更多" />
+	<input type="button" value="更多" onclick="more()" />
+	<script>
+		function change( ) {
+			document.getElementById("three").style.color="red";
+		}
+		function more( ) {
+			document.getElementById("two").style.display="block";
+		}
+	</script>
 </body>
 </html>
