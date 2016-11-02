@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时间函数</title>
+	<script type="text/javascript">
+		var time= new Date();
+		var d=time.getHours();
+		if (d >= 6 && d < 12) {
+			alert("早上好！");
+		}else if (d >= 12 && d < 18) {
+			setTimeout("alert('下午好！')",5000);
+		}else if (d >= 18 && d < 24) {
+			alert("晚上好！");
+		}else{
+			alert("这个时候不睡觉干嘛呢？");
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
