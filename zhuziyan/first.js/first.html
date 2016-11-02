@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>first js</title>
+<style type="text/css">
+ul{
+	padding-left: 0;
+}
+ul li{
+	list-style-type: none;
+	display: inline-block;
+	background-color: green;
+	height: 24px;
+	width: 50px;
+}
+ul li a{
+	display: inline-block;
+	height: 24px;
+	width: 50px;
+}
+</style>
+	<script type="text/javascript">
+	 var us="wealllovencuhome2001_2016ncuhome"
+	function myFunction1(){
+        alert ("o")
+    }
+    function myFunction2(){
+        alert (us.length)
+    }
+   function myFunction3(){
+   	    var us="wealllovenauhome2001_2016ncuhome"
+        alert (us)
+    }
+    function myFunction4(){
+        alert (us+"ers")
+    }
+    function show(){
+        document.getElementById('show-ul').style.display = "block"
+    }
+    function show2(){
+        document.getElementById('erweima').style.display = "block"
+    } 
+    function hide(){
+    	document.getElementById('erweima').style.display = "none"
+    }
+    </script>
+</head>
+<body>
+<button onclick="myFunction1()">点击这里</button>
+<button onclick="myFunction2()">点击这里</button>
+<button onclick="myFunction3()">点击这里</button>
+<button onclick="myFunction4()">点击这里</button>
+<ul>
+	<li><a href="#"></a></li>
+	<li onclick="changes()"><p ></p></li>
+	<li><a href="#"></a></li>
+	<li><a href="#"></a></li>
+	<li><a id="change" href="#"></a></li>
+</ul>
+<button onclick="show()">更多按钮</button>
+<button onmouseenter="show2()" onmouseleave="hide()">更多按钮</button>
+<ul id="show-ul" style="display: none;">
+	<li><a href="#"></a></li>
+	<li><a href="#"></a></li>
+	<li><a href="#"></a></li>
+	<li><a href="#"></a></li>
+	<li><a href="#"></a></li>
+</ul>
+<img id="erweima" style="display: none;" src="MIUI/img/jiayuanw.png">
+<script type="text/javascript">
+	window.onload　= function () {
+	var time = new Date()
+	var h = time.getHours()
+	if (h>=0 && h<=6) {
+		alert ('再不睡，等着猝死吧！')
+	}
+	else if (h>6&&h<12) {
+		alert ('上午好！')
+	}
+	else if (h>=12&&h<=18) {
+		alert ('下午好！')
+	}
+	else if(h>18&&h<24){
+		alert ('晚上好！')
+	}
+	}
+	function changes (){
+	console.log ('hhhhh')
+	document.getElementById('change').style.background = 'red'
+    }
+</script>
+</body>
+</html>
