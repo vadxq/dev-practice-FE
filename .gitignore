@@ -1,6 +1,2 @@
-node_modules/
 *.log
 logs/
-deploy/
-dist/
-demo/
