@@ -552,9 +552,9 @@
           color: #fff;
           text-decoration: none;
           background: rgb(252, 112, 80);
-          text-align: center;
-          line-height: 50px;
-          margin-top:15px;
+          text-height: 50px;
+          margialign: center;
+          line-n-top:15px;
           border-radius: 2%;
           font-size: 25px;
           font-family: "Microsoft YaHei";

@@ -75,9 +75,9 @@
 
   var callMsg = function(data) {
     var jsonData = JSON.parse(data)
-    console.log(jsonData) // 注意查看随时console返回的东西
+    console.log (jsonData) // 注意查看随时console返回的东西
       // 这里处理的正确的操作
-    alert('lalalala')
+    alert ('lalalala')
   }
 
   var loginUs = function () {
@@ -86,13 +86,18 @@
       password: query('.password').value
     }
     var jsonData = JSON.stringify(data)
-    ajax('post', '', login, jsonData)
+    ajax('post', 'https://api.github.com/', login, jsonData)
   }
   var login = function (data) {
     var jsonData = JSON.parse(data)
-    console.log(data)
-  }
+    console.log (jsonData)
+   if () {
 
+   } else {
+
+   }
+  }
+ 
   // 调用ajax
   query('#login').addEventListener('click', loginUs, false)
   query('#getMsg').addEventListener('click', useMsg, false)
