@@ -8,27 +8,109 @@
 			padding: 0;
 			margin: 0;
 			font-size: 12px;
-			font-family: Microsoft-YaHei;
+			font-family: 'Open Sans';
+		}
+		a {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		#header {
+			min-width: 1500px;
+			height: 80px;
+			background-color: #76c7c0;
+			border-radius: 5px;
+
+		} 
+		#topbar {
+			width: 1156px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		#logo {
+			height: 80px;
+			float: left;
+		}
+		#logo span {
+			display: inline-block;
+			margin-top:22px; 
+		}
+		.logo_1 {
+			font-size:30px  ; 
+			color: #fff ;
+			font-weight: bold;
+			font-family:'Open Sans Extrabold';
+		}
+		.logo_2 {
+			margin-left: 4px;
+			font-size: 25px ;
+			color: #fff ;
+		}
+		#topbar ul {
+			height: 80px;
+			padding-left: 212px;
+			overflow: hidden;
+		}
+		#topbar ul li {
+			float: left;
+			line-height: 30px;
+			margin-top: 25px;
+			text-align: center;
+			border-radius: 5px; 
+		}
+		#topbar ul li a {
+			font-family: 'Open Sans Semibold';
+			font-size: 13px;
+			color: #fff;	
+		}
+		.nav1 {
+			margin-left: 0;
+		}
+		.nav2 {
+			margin-left: 43px;
+		}
+		.nav3 {
+			margin-left: 48px;
+		}
+		.nav4 {
+			margin-left: 50px; 
+		}
+		.nav5 {
+			margin-left: 29px;
+			width: 80px;
+			background-color: #62a29e;
+			box-shadow: 0 3px 0px 0 #528b86;
+		}
+		.nav6 {
+			margin-left: 33px;
+		}
+		.nav7 {
+			margin-left: 53px;
+		}
+		.nav4_li {
+			width: 8px;
+			height: 5px;
 		}
 	</style>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
+	<div id="header">
+		<div id="topbar">
 			<div id="logo"><span class="logo_1">MODUS</span><span class="logo_2">versus</span></div>
 			<ul>
-				<li class="nav"><a href="#">HOME</a></li>
-				<li class="nav"><a href="#">ABOUT</a></li>
-				<li class="nav"><a href="#">SERVICES</a></li>
-				<li class="nav"><img src="" alt="" /><a href="#">PORTFOLIO</a></li>
-				<li class="nav"><a href="#">BLOG</a></li>
-				<li class="nav"><a href="#">FEATURES</a></li>
-				<li class="nav"><a href="#">CONTACTS</a></li>
+				<li class="nav1 con"><a href="#">HOME</a></li>
+				<li class="nav2 con"><a href="#">ABOUT</a></li>
+				<li class="nav3 con"><a href="#">SERVICES</a></li>
+				<li class="nav4 con"><i class="nav4_li"></i><a href="#">PORTFOLIO</a></li>
+				<li class="nav5 con"><a href="#">BLOG</a></li>
+				<li class="nav6 con"><a href="#">FEATURES</a></li>
+				<li class="nav7 con"><a href="#">CONTACTS</a></li>
 			</ul>
 			<img src="" alt="" />
 		</div>
-		<div id="main"></div>
-		<div id="footer"></div>
 	</div>
+	<div id="main"></div>
+	<div id="footer"></div>
 </body>
 </html>
