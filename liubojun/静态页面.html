@@ -8,7 +8,7 @@
 			padding: 0;
 			margin: 0;
 			font-size: 12px;
-			font-family: 'Open Sans';
+			font-family: 'Open Sans',sans-serif;
 		}
 		a {
 			text-decoration: none;
@@ -27,6 +27,7 @@
 			width: 1156px;
 			overflow: hidden;
 			margin: 0 auto;
+			position: relative;
 		}
 		#logo {
 			height: 80px;
@@ -40,7 +41,7 @@
 			font-size:30px  ; 
 			color: #fff ;
 			font-weight: bold;
-			font-family:'Open Sans Extrabold';
+			font-family:'Open Sans';
 		}
 		.logo_2 {
 			margin-left: 4px;
@@ -60,7 +61,7 @@
 			border-radius: 5px; 
 		}
 		#topbar ul li a {
-			font-family: 'Open Sans Semibold';
+			font-family: 'Open Sans';
 			font-size: 13px;
 			color: #fff;	
 		}
@@ -74,13 +75,16 @@
 			margin-left: 48px;
 		}
 		.nav4 {
-			margin-left: 50px; 
+			margin-left: 42px; 
 		}
 		.nav5 {
 			margin-left: 29px;
 			width: 80px;
 			background-color: #62a29e;
 			box-shadow: 0 3px 0px 0 #528b86;
+		}
+		.nav5:hover {
+			background-color: #528b86;
 		}
 		.nav6 {
 			margin-left: 33px;
@@ -91,6 +95,19 @@
 		.nav4_li {
 			width: 8px;
 			height: 5px;
+			display: inline-block;
+			background: url(pic/topbar.png) no-repeat;
+			margin-right: 7px;
+			margin-bottom: 2px;
+		}
+		#search {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background:url(pic/sr.png) no-repeat;
+			position: absolute;
+			top:33px;
+			right: 99px;
 		}
 	</style>
 </head>
@@ -102,12 +119,12 @@
 				<li class="nav1 con"><a href="#">HOME</a></li>
 				<li class="nav2 con"><a href="#">ABOUT</a></li>
 				<li class="nav3 con"><a href="#">SERVICES</a></li>
-				<li class="nav4 con"><i class="nav4_li"></i><a href="#">PORTFOLIO</a></li>
+				<li class="nav4 con"><span class="nav4_li"></span><a href="#">PORTFOLIO</a></li>
 				<li class="nav5 con"><a href="#">BLOG</a></li>
 				<li class="nav6 con"><a href="#">FEATURES</a></li>
 				<li class="nav7 con"><a href="#">CONTACTS</a></li>
 			</ul>
-			<img src="" alt="" />
+			<span id="search"></span>
 		</div>
 	</div>
 	<div id="main"></div>
