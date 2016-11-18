@@ -134,7 +134,110 @@
 			width:20px;
 			height: 15px;
 			position: absolute;
-			left:183px;
+			left:175px;
+		}
+		/*main样式*/
+		#main {
+			width: 1180px;
+			margin:30px auto;
+		}	
+		/*主界面Blog样式*/
+		.blog_1 {
+			width: 870px;
+			overflow: hidden;
+			border-bottom: 3px solid #e5e6e6;
+		}
+		.left_wrap {
+			width: 70px;
+			float: left;
+		}
+		.right_wrap {
+			width: 770px;
+			float: right;
+		}
+		.left_1 {
+			background-color: #f8f8f8;
+			width: 70px;
+			height: 80px;
+			margin-bottom: 10px;
+			box-shadow: 0 3px 0px 0 #e5e6e6;
+		}
+		.left_1 p{
+			color: #7f8c8c;
+			text-align: center;
+		}
+		.left_month {
+			font-size: 20px;
+			font-family: 'Open Sans';
+			padding-top: 13px;
+		}
+		.left_date {
+			font-size: 30px;
+			font-family: 'Open Sans Extrabold';
+			padding-top: 8px;
+		}
+		.left_2 {
+			background: #7f8c8c url(pic/post.png) no-repeat center;
+			width: 70px;
+			height: 70px;
+			border-radius: 5px;
+			box-shadow: 0 3px 0px 0 #e5e6e6;
+		}
+		.right_1 {
+			display: block;
+		}
+		.right_1 img {
+			width: 770px;
+			height: 300px;
+			display: block;
+			border-radius: 5px;
+		}
+		.right_2 {
+			width: 770px;
+			margin-bottom: 35px;
+		}
+		.right_2 h3 {
+			color: #76c7c0;
+			font-size: 24px;
+			font-family: 'Open Sans Semibold';
+			margin-top: 25px;
+		}
+		.right_2 p {
+			color: #7f8c8c;
+			font-size: 14px;
+			font-family: 'Open Sans';
+			margin-top: 15px;
+		}
+		#con{
+			margin-top: 30px;
+		}
+		.right_2 span {
+			color: #e2534b;
+			font-size: 14px;
+			vertical-align: bottom;
+		}
+		#mark1 {
+			width: 16px;
+			height: 13px;
+			display: inline-block;
+			background: url(pic/copy6.png) no-repeat;
+			margin-left: 10px;
+			margin-right: 5px; 
+		}
+		#mark2 {
+			width: 15px;
+			height: 14px;
+			display: inline-block;
+			background: url(pic/copy7.png) no-repeat;
+			margin-left: 20px;
+			margin-right: 8px;
+		}
+		#mark3 {
+			width: 15px;
+			height: 12px;
+			display: inline-block;
+			background:url(pic/copy8.png) no-repeat;
+			margin-left: 8px;
 		}
 	</style>
 </head>
@@ -155,16 +258,35 @@
 				</ul>				
 			</div>
 		</div>
+		<div id="headline">
+			<div class="topbar">
+				<p class="leftone">BLOG</p>
+				<p class="rightone">Home&nbsp;/&nbsp;Blog</p>
+			</div>	
+		</div>
+		<span id="arrowup"></span>
 		<div id="main">
-			<div id="headline">
-				<div class="topbar">
-					<p class="leftone">BLOG</p>
-					<p class="rightone">Home&nbsp;/&nbsp;Blog</p>
-				</div>	
+			<div id="mainblog">
+				<div class="blog_1">
+					<div class="left_wrap">
+						<div class="left_1">
+							<p class="left_month">MAY</p>
+							<p class="left_date">26</p>
+						</div>
+						<div class="left_2"></div>
+					</div>
+					<div class="right_wrap">
+						<a class="right_1" href="#"><img src="pic/photo2.png" alt="今天真高兴" /></a>
+						<div class="right_2">
+							<h3>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
+							<p>Posted by<span> Admin </span>in<span> Wordpress </span><span id="mark1"></span><span>Design, Template</span><span id="mark2"></span><span>22</span></p>
+							<p id="con">Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<p><span>Continue reading</span><span id="mark3"></span></p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<span id="arrowup"></span>
-			<div id="left"></div>
-			<div id="right"></div>
+			<div id="sidebar"></div>
 		</div>
 		<div id="footer"></div>
 	</div>
