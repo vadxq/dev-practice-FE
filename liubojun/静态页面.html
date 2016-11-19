@@ -52,7 +52,7 @@
 		}
 		.topbar ul {
 			height: 80px;
-			padding-left: 27%;
+			padding-left: 25%;
 			overflow: hidden;
 		}
 		.topbar ul li {
@@ -139,9 +139,13 @@
 		/*main样式*/
 		#main {
 			width: 1180px;
-			margin:30px auto;
+			margin:100px auto;
+			overflow: hidden;
 		}	
 		/*主界面Blog样式*/
+		#mainblog {
+			float: left;
+		}
 		.blog_1 {
 			width: 870px;
 			overflow: hidden;
@@ -161,6 +165,7 @@
 			height: 80px;
 			margin-bottom: 10px;
 			box-shadow: 0 3px 0px 0 #e5e6e6;
+			border-radius: 5px;
 		}
 		.left_1 p{
 			color: #7f8c8c;
@@ -194,19 +199,19 @@
 		}
 		.right_2 {
 			width: 770px;
-			margin-bottom: 35px;
+			margin-bottom: 50px;
 		}
 		.right_2 h3 {
 			color: #76c7c0;
 			font-size: 24px;
 			font-family: 'Open Sans Semibold';
-			margin-top: 25px;
+			margin-top: 30px;
 		}
 		.right_2 p {
 			color: #7f8c8c;
 			font-size: 14px;
 			font-family: 'Open Sans';
-			margin-top: 15px;
+			margin-top: 20px;
 		}
 		#con{
 			margin-top: 30px;
@@ -221,7 +226,7 @@
 			height: 13px;
 			display: inline-block;
 			background: url(pic/copy6.png) no-repeat;
-			margin-left: 10px;
+			margin-left: 7px;
 			margin-right: 5px; 
 		}
 		#mark2 {
@@ -238,6 +243,139 @@
 			display: inline-block;
 			background:url(pic/copy8.png) no-repeat;
 			margin-left: 8px;
+		}
+		/*siderbar样式*/
+		#sidebar {
+			float: right;
+		}
+		/*categories*/
+		.categories,.recent_posts,.tags,.archive {
+			width: 270px;
+			margin-bottom:25px; 
+		}
+		.categories h3 {
+			font-family: 'Open Sans Extrabold';
+			font-size: 16px;
+			color: #7f8c8c;
+		}
+		.categories ul{
+			margin-top: 25px;
+			margin-left: 10px;
+			padding-bottom: 21px;
+		}
+		.categories ul li {
+			margin-bottom: 12px;
+		}
+		.categories ul li a {
+			font-family: 'Open Sans Semibold';
+			font-size: 14px;
+			color: #e2534b;
+			margin-left: 10px;
+		}
+		.point {
+			background: url(pic/copy5.png) no-repeat;
+			width: 13px;
+			height: 14px;
+			display: inline-block;
+			vertical-align: text-bottom;
+		}
+		/*recent posts*/
+		.recent_posts h3 {
+			font-size: 16px;
+			font-family: Open Sans Extrabold;
+			color: #7f8c8c;
+		}
+		.recent_posts ul {
+			margin-top: 25px;
+		}
+		.recent_posts ul li {
+			margin-bottom: 14px;
+			border-bottom: 1px solid #e5e6e6;
+			padding-bottom: 13px;
+		}
+		.recent_posts ul li a {
+			font-family: 'Open Sans Semibold';
+			font-size: 14px;
+			color: #e2534b;
+			margin-left: 11px;
+			display: inline-block;
+			width: 180px;
+		}
+		.recent_posts ul li p {
+			margin-left: 27px;
+			color: #7f8c8c;
+			font-family: Open Sans;
+			margin-top: 3px;
+		}
+		.point_1 {
+			width: 5px;
+			height: 8px;
+			display: inline-block;
+			background: url(pic/copy4.png) no-repeat;
+			margin-left: 10px;
+			vertical-align: top;
+			margin-top: 4px;
+		}
+		/*tags样式*/
+		.tags h3 {
+			font-size: 16px;
+			font-family: 'Open Sans Extrabold';
+			color: #7f8c8c;
+			margin-bottom: 20px;
+		}
+		.tags span {
+			display: inline-block;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			line-height: 25px;
+			border-radius: 5px;		
+			text-align: center;
+			background-color: #7f8c8c;
+		}
+		.tags span a {
+			color: #fff;
+			font-size: 14px;
+			font-family: 'Open Sans';
+			line-height: 10px;
+			display: inline-block;
+		}
+		.tags span:hover {
+			background-color: #e2534b;
+		}
+		.tag1 {
+			width: 91px;
+		}
+		.tag2 {
+			width: 51px;
+		}
+		.tag3 {
+			width: 81px;
+		}
+		/*archive样式*/
+		.archive h3 {
+			font-size: 16px;
+			font-family: 'Open Sans Extrabold';
+			color: #7f8c8c; 
+		}
+		.archive ul {
+			margin-top: 25px;
+		}
+		.archive ul li {
+			margin-bottom: 15px;
+			margin-left: 8px;
+		}
+		.archive ul li a {
+			font-size: 14px;
+			color: #e2534b;
+			font-family: 'Open Sans';
+			margin-left: 11px;
+		}
+		.point_2 {
+			width: 13px;
+			height: 14px;
+			display: inline-block;
+			background: url(pic/copy3.png) no-repeat;
+			vertical-align: bottom;
 		}
 	</style>
 </head>
@@ -285,8 +423,49 @@
 						</div>
 					</div>
 				</div>
+				<div class="blog_2"></div>
 			</div>
-			<div id="sidebar"></div>
+			<div id="sidebar">
+				<div class="categories">
+					<h3>CATEGORIES</h3>
+					<ul>
+						<li><span class="point"></span><a href="#">LOGO DESIGN</a></li>
+						<li><span class="point"></span><a href="#">WEB DESIGN</a></li>
+						<li><span class="point"></span><a href="#">PHOTOGRAPHY</a></li>
+						<li><span class="point"></span><a href="#">WORDPRESS</a></li>
+						<li><span class="point"></span><a href="#">ICONS</a></li>
+					</ul>
+				</div>
+				<div class="recent_posts">
+					<h3>RECENT POSTS</h3>
+					<ul>
+						<li><span class="point_1"></span><a href="#">Curabitur vitae velit</a><p>25 May 2013</p></li>
+						<li><span class="point_1"></span><a href="#">Vivamus at elit quis urna adipiscing iaculis</a><p>25 May 2013</p></li>
+						<li><span class="point_1"></span><a href="#">Curabitur vitae velit</a><p>25 May 2013</p></li>
+						<li><span class="point_1"></span><a href="#">Vivamus at elit quis urna adipiscing iaculis</a><p>25 May 2013</p></li>
+					</ul>
+				</div>
+				<div class="tags">
+					<h3>TAGS</h3>
+					<span class="tag1"><a href="#">Maecenas</a></span>
+					<span class="tag2"><a href="#">Nunc</a></span>
+					<span class="tag3"><a href="#">Praesent</a></span>
+					<span class="tag2"><a href="#">Nunc</a></span>
+					<span class="tag3"><a href="#">Praesent</a></span>
+					<span class="tag2"><a href="#">Nunc</a></span>
+					<span class="tag1"><a href="#">Maecenas</a></span>
+					<span class="tag3"><a href="#">Praesent</a></span>
+					<span class="tag2"><a href="#">Nunc</a></span>
+				</div>
+				<div class="archive">
+					<h3>ARCHIVE</h3>
+					<ul>
+						<li><span class="point_2"></span><a href="#">2013</a></li>
+						<li><span class="point_2"></span><a href="#">2012</a></li>
+						<li><span class="point_2"></span><a href="#">2011</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div id="footer"></div>
 	</div>
