@@ -143,13 +143,16 @@
 			overflow: hidden;
 		}	
 		/*主界面Blog样式*/
-		#mainblog {
+		.mainblog {
 			float: left;
 		}
-		.blog_1 {
+		.blog_1,.blog_2 {
 			width: 870px;
 			overflow: hidden;
 			border-bottom: 3px solid #e5e6e6;
+		}
+		.blog2 {
+			margin-top: 50px;
 		}
 		.left_wrap {
 			width: 70px;
@@ -157,13 +160,14 @@
 		}
 		.right_wrap {
 			width: 770px;
+			position: relative;
 			float: right;
 		}
 		.left_1 {
 			background-color: #f8f8f8;
 			width: 70px;
 			height: 80px;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 			box-shadow: 0 3px 0px 0 #e5e6e6;
 			border-radius: 5px;
 		}
@@ -179,14 +183,28 @@
 		.left_date {
 			font-size: 30px;
 			font-family: 'Open Sans Extrabold';
-			padding-top: 8px;
+			padding-top: 5px;
 		}
-		.left_2 {
-			background: #7f8c8c url(pic/post.png) no-repeat center;
+		.left_2, .left_3, .left_4, .left_5, .left_6 {
 			width: 70px;
 			height: 70px;
 			border-radius: 5px;
 			box-shadow: 0 3px 0px 0 #e5e6e6;
+		}
+		.left_2 {
+			background: #7f8c8c url(pic/post.png) no-repeat center;
+		}
+		.left_3{
+			background: #7f8c8c url(pic/image.png) no-repeat center;
+		}
+		.left_4 {
+			background: #7f8c8c url(pic/video.png) no-repeat center;
+		}
+		.left_5 {
+			background: #7f8c8c url(pic/Qote.png) no-repeat center;
+		}
+		.left_6 {
+			background: #7f8c8c url(pic/audio.png) no-repeat center;
 		}
 		.right_1 {
 			display: block;
@@ -213,15 +231,28 @@
 			font-family: 'Open Sans';
 			margin-top: 20px;
 		}
-		#con{
+		#con {
 			margin-top: 30px;
+		}
+		#con1 {
+			margin-top: 0;
+		}
+		#con2 {
+			margin-top: 27px;
+			font-family: 'OpenSans Italic'; 
+		}
+		#con3 {
+			margin-top: 20px;
+		}
+		#con4 {
+			margin-top: 10px;
 		}
 		.right_2 span {
 			color: #e2534b;
 			font-size: 14px;
 			vertical-align: bottom;
 		}
-		#mark1 {
+		.mark1 {
 			width: 16px;
 			height: 13px;
 			display: inline-block;
@@ -229,7 +260,7 @@
 			margin-left: 7px;
 			margin-right: 5px; 
 		}
-		#mark2 {
+		.mark2 {
 			width: 15px;
 			height: 14px;
 			display: inline-block;
@@ -237,15 +268,53 @@
 			margin-left: 20px;
 			margin-right: 8px;
 		}
-		#mark3 {
+		.mark3 {
 			width: 15px;
 			height: 12px;
 			display: inline-block;
 			background:url(pic/copy8.png) no-repeat;
 			margin-left: 8px;
 		}
+		.container {
+			width: 770px;
+			height: 460px;
+			border:1px solid #000;
+		}
+		.leftarrow {
+			width: 50px;
+			height: 57px;
+			background: #e8645a url(pic/leftarrow.png) no-repeat center;
+			border-radius: 5px;
+			box-shadow: 0 3px 0px 0 #e2534b;
+			position: absolute;
+			top:201px;
+		}
+		.rightarrow {
+			width: 50px;
+			height: 57px;
+			background: #e8645a url(pic/rightarrow.png) no-repeat center;
+			border-radius: 5px;
+			box-shadow: 0 3px 0px 0 #e2534b;
+			position: absolute;
+			top:201px;
+			right: 0;
+		}
+		.leftarrow:hover, .rightarrow:hover {
+			backgrsound-color: #e2534b;
+			cursor: pointer;
+		}
+		.video {
+			width:770px;
+			height: 460px;
+			border:1px solid #000;
+		}
+		.audio {
+			width: 770px;
+			height: 90px;
+			border:1px solid #000;
+		}
 		/*siderbar样式*/
-		#sidebar {
+		.sidebar {
 			float: right;
 		}
 		/*categories*/
@@ -377,6 +446,44 @@
 			background: url(pic/copy3.png) no-repeat;
 			vertical-align: bottom;
 		}
+		/*切换页面样式*/
+		.pages {
+			width: 870px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.pages a, .pages span {
+			display: inline-block;
+			width: 40px;
+			height:40px; 
+			line-height: 40px;
+			background-color: #8c9898;
+			border-radius: 5px;
+			box-shadow: 0 3px 0 0 #7f8c8c;
+			margin-right: 6px;
+			vertical-align: middle;
+			color: #fff;
+			font-size: 16px;
+			font-family: 'Open Sans Extrabold';
+			text-align: center;
+		}
+		.pages a:hover, .pages span:hover {
+			background-color: #e5655d;
+			box-shadow: 0 3px 0 0 #e2534b; 
+		}
+		a.current {
+			background-color: #649792;
+			box-shadow: 0 3px 0 0 #528b86;
+		}
+		span.lastpage {
+			background: #8c9898 url(pic/lastpage.png) no-repeat center;
+			margin-right: 23px;
+		}
+		span.nextpage {
+			background: #8c9898 url(pic/nextpage.png) no-repeat center;
+			margin-left: 5px;
+		}
+		/*footer样式*/
 	</style>
 </head>
 <body>
@@ -404,7 +511,7 @@
 		</div>
 		<span id="arrowup"></span>
 		<div id="main">
-			<div id="mainblog">
+			<div class="mainblog">
 				<div class="blog_1">
 					<div class="left_wrap">
 						<div class="left_1">
@@ -417,15 +524,81 @@
 						<a class="right_1" href="#"><img src="pic/photo2.png" alt="今天真高兴" /></a>
 						<div class="right_2">
 							<h3>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
-							<p>Posted by<span> Admin </span>in<span> Wordpress </span><span id="mark1"></span><span>Design, Template</span><span id="mark2"></span><span>22</span></p>
+							<p>Posted by<span> Admin </span>in<span> Wordpress </span><span class="mark1"></span><span>Design, Template</span><span class="mark2"></span><span>22</span></p>
 							<p id="con">Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-							<p><span>Continue reading</span><span id="mark3"></span></p>
+							<p><span>Continue reading</span><span class="mark3"></span></p>
 						</div>
 					</div>
 				</div>
-				<div class="blog_2"></div>
+				<div class="blog_2 blog2">
+					<div class="left_wrap">
+						<div class="left_1">
+							<p class="left_month">MAY</p>
+							<p class="left_date">19</p>
+						</div>
+						<div class="left_3"></div>
+					</div>
+					<div class="right_wrap">
+						<div class="container">
+							<div class="leftarrow"></div>
+							<div class="rightarrow"></div>
+						</div>
+						<div class="right_2">
+							<h3>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
+							<p>Posted by<span> Admin </span>in<span> Photography </span><span class="mark1"></span><span>Photo</span><span class="mark2"></span><span>22</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="blog_2 blog2">
+					<div class="left_wrap">
+						<div class="left_1">
+							<p class="left_month">MAY</p>
+							<p class="left_date">16</p>
+						</div>
+						<div class="left_4"></div>
+					</div>
+					<div class="right_wrap">
+						<div class="video"></div>
+						<div class="right_2">
+							<h3>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
+							<p>Posted by<span> Admin </span>in<span> Video </span><span class="mark1"></span><span>Nature</span><span class="mark2"></span><span>22</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="blog_2 blog2">
+					<div class="left_wrap">
+						<div class="left_1">
+							<p class="left_month">MAY</p>
+							<p class="left_date">12</p>
+						</div>
+						<div class="left_5"></div>
+					</div>
+					<div class="right_wrap">
+						<div class="right_2">
+							<h3 id="con1">Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
+							<p>Posted by<span> Admin </span>in<span> Video </span><span class="mark1"></span><span>Nature</span><span class="mark2"></span><span>22</span></p>
+							<p id="con2">Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+						</div>
+					</div>
+				</div>
+				<div class="blog_2 blog2">
+					<div class="left_wrap">
+						<div class="left_1">
+							<p class="left_month">MAY</p>
+							<p class="left_date">12</p>
+						</div>
+						<div class="left_6"></div>
+					</div>
+					<div class="right_wrap">
+						<div class="right_2">
+							<div class="audio"></div>
+							<h3 id="con3">Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
+							<p id="con4">Posted by<span> Admin </span>in<span> Audio </span><span class="mark1"></span><span>Nature</span><span class="mark2"></span><span>22</span></p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div id="sidebar">
+			<div class="sidebar">
 				<div class="categories">
 					<h3>CATEGORIES</h3>
 					<ul>
@@ -465,6 +638,20 @@
 						<li><span class="point_2"></span><a href="#">2011</a></li>
 					</ul>
 				</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="pages">
+				<span class="lastpage"></span>
+				<a href="#">1</a>
+				<a class="current" href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">...</a>
+				<a href="#">10</a>
+				<a href="#">11</a>
+				<a href="#">12</a>
+				<span class="nextpage"></span>	
 			</div>
 		</div>
 		<div id="footer"></div>
