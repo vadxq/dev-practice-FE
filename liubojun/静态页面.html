@@ -19,6 +19,9 @@
 		ul li {
 			list-style: none;
 		}
+		#wrapper {
+			min-width: 1500px;
+		}
 		/*header样式*/
 		#header {
 			min-width: 1500px;
@@ -30,6 +33,7 @@
 			overflow: hidden;
 			margin: 0 auto;
 			position: relative;
+			height: 80px;
 		}
 		#logo {
 			height: 80px;
@@ -128,18 +132,10 @@
 			color: #7f8c8c;
 			margin-top: 28px;
 		}
-		#arrowup {
-			background: url(pic/Path.png) no-repeat;
-			display: inline-block;
-			width:20px;
-			height: 15px;
-			position: absolute;
-			left:175px;
-		}
 		/*main样式*/
 		#main {
 			width: 1180px;
-			margin:100px auto;
+			margin:100px auto 25px;
 			overflow: hidden;
 		}	
 		/*主界面Blog样式*/
@@ -245,6 +241,9 @@
 			margin-top: 20px;
 		}
 		#con4 {
+			margin-top: 10px;
+		}
+		#con5 {
 			margin-top: 10px;
 		}
 		.right_2 span {
@@ -449,8 +448,8 @@
 		/*切换页面样式*/
 		.pages {
 			width: 870px;
-			margin-top: 40px;
-			margin-bottom: 40px;
+			margin-top: 60px;
+			margin-bottom: 60px;
 		}
 		.pages a, .pages span {
 			display: inline-block;
@@ -484,6 +483,151 @@
 			margin-left: 5px;
 		}
 		/*footer样式*/
+		#footer_1 {
+			min-width: 1500px;
+			height: 350px;
+			background-color: #76c7c0;
+		}
+		.footbar {
+			width: 1156px;
+			margin: 0 auto;
+			height: 350px;
+			overflow: hidden;
+		}
+		.footleft {
+			width: 360px;
+			float: left;
+		}
+		.footleft h3 {
+			padding-top: 78px;
+		}
+		.footleft p {
+			margin-top:25px;
+			color: #fff; 
+			font-size: 13px;
+			line-height: 1.5em;
+		}
+		.footleft p span {
+			font-size: 20px;
+			font-family: 'Open Sans SemiboldItalic';
+			margin-left: 15px;
+		}
+		#temp {
+			margin-left: 21px;
+		}
+		.footleft1 {
+			float: left;
+			margin-left: 20px;
+		}
+		.footleft1 h3, .footright h3 {
+			padding-top: 88px;
+			font-size: 20px;
+			color: #3f6a66;
+			font-family: 'Open Sans Bold';
+		}
+		.footleft1 ul, .footright ul {
+			margin-left: 18px;
+			margin-top: 22px;
+		}
+		.footleft1 ul li, .footright ul li {
+			margin-top: 8px;
+		}
+		.footleft1 ul li a, .footright ul li a {
+			color: #fff;
+			font-size: 13px;
+			margin-left: 10px;
+		}
+		.footright {
+			float: left;
+			margin-left: 104px;
+		}
+		.pipe {
+			background: url(pic/point.png) no-repeat;
+			width: 5px;
+			height: 8px;
+			display: inline-block;
+		}
+		.footright1{
+			float: left;
+			margin-left: 82px;
+		}
+		.footright1 h3 {
+			padding-top: 88px;
+			font-size: 20px;
+			color: #fff;
+			font-family: 'Open Sans Italic','Open Sans Bold';
+		}
+		.footright1 h3 span {
+			font-weight: bold; 
+			font-size: 20px;
+		}
+		.footright1 p {
+			font-size: 13px;
+			line-height: 1.5em;
+			color: #fff;
+			margin-bottom: 5px;
+		}
+		p.temp2 {
+			font-size: 13px;
+			color: #528b86;
+		}
+		.footright1_1 {
+			overflow: hidden;
+			width: 378px;
+			margin-top: 20px;
+		}
+		.temp3 {
+			float: left;
+			margin-left: 20px;
+			width: 288px;
+		}
+		.pic {
+			width: 70px;
+			height: 70px;
+			display: block;
+			background: #5e9f9a url(pic/photo7.png) no-repeat center;
+			border-radius: 5px;
+			float: left;
+		}
+		#footer_2 {
+			min-width: 1500px;
+			height: 50px;
+			background-color: #6ab3ac;
+		}
+		#footer_2 span {
+			font-size: 12px;
+			font-family: 'Open Sans';
+			color: #fff;
+		}
+		.tmp1, .tmp2, .tmp3, .tmp4 {
+			width: 20px;
+			height: 20px;
+			margin-top: 15px;
+			margin-left: 20px;
+			display: inline-block;
+			float: right;
+		}
+		#tmp {
+			float: left;
+			margin-top: 18px;
+		}
+		.tmp1 {
+			background: url(pic/facebook.png) no-repeat;
+		}
+		.tmp2 {
+			background: url(pic/google.png) no-repeat;
+		}
+		.tmp3 {
+			background: url(pic/twitter.png) no-repeat;
+		}
+		.tmp4 {
+			background: url(pic/wifi.png) no-repeat;
+		}
+		.footbar2 {
+			width:1156px;
+			margin: 0 auto;
+			height: 50px; 
+		}
 	</style>
 </head>
 <body>
@@ -509,7 +653,6 @@
 				<p class="rightone">Home&nbsp;/&nbsp;Blog</p>
 			</div>	
 		</div>
-		<span id="arrowup"></span>
 		<div id="main">
 			<div class="mainblog">
 				<div class="blog_1">
@@ -654,7 +797,63 @@
 				<span class="nextpage"></span>	
 			</div>
 		</div>
-		<div id="footer"></div>
+		<div id="footer_1">
+			<div class="footbar">
+				<div class="footleft">
+					<h3><span class="logo_1">MODUS</span><span class="logo_2">versus</span></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>
+					<p>Phone: <span id="temp">182 2569 5896</span></p>
+					<p id="con5">e-mail: <span>info@modu.versus</span></p>
+				</div>
+				<div class="footleft1">
+					<h3>Company</h3>
+					<ul>
+						<li><span class="pipe"></span><a href="#">About</a></li>
+						<li><span class="pipe"></span><a href="#">FAQ</a></li>
+						<li><span class="pipe"></span><a href="#">Contact</a></li>
+						<li><span class="pipe"></span><a href="#">Terms</a></li>
+						<li><span class="pipe"></span><a href="#">Privacy</a></li>
+						<li><span class="pipe"></span><a href="#">Testimonials</a></li>
+					</ul>
+				</div>
+				<div class="footright">
+					<h3>Community</h3>
+					<ul>
+						<li><span class="pipe"></span><a href="#">Blog</a></li>
+						<li><span class="pipe"></span><a href="#">Forum</a></li>
+						<li><span class="pipe"></span><a href="#">Support</a></li>
+						<li><span class="pipe"></span><a href="#">Newsletter</a></li>
+					</ul>
+				</div>
+				<div class="footright1">
+					<h3>from the <span>BLOG</span></h3>
+					<div class="footright1_1">
+						<span class="pic"></span>
+						<div class="temp3">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<p class="temp2">26 May,2013</p>
+						</div>	
+					</div>
+					<div style="clear:both;"></div>
+					<div  class="footright1_1">
+						<span class="pic"></span>
+						<div class="temp3">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<p class="temp2">26 May,2013</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_2">
+			<div class="footbar2">
+				<span id="tmp">2013 ModusVersus</span>
+				<span class="tmp4"></span>
+				<span class="tmp3"></span>
+				<span class="tmp2"></span>
+				<span class="tmp1"></span>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
