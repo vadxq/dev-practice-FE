@@ -32,7 +32,6 @@
 			width: 1156px;
 			overflow: hidden;
 			margin: 0 auto;
-			position: relative;
 			height: 80px;
 		}
 		#logo {
@@ -56,15 +55,18 @@
 		}
 		.topbar ul {
 			height: 80px;
-			padding-left: 25%;
+			padding-left: 21%;
 			overflow: hidden;
+			position: relative;
 		}
 		.topbar ul li {
 			float: left;
 			line-height: 30px;
 			margin-top: 25px;
 			text-align: center;
-			border-radius: 5px; 
+			border-radius: 5px;
+			width: 80px; 
+			cursor: pointer;
 		}
 		.topbar ul li a {
 			font-family: 'Open Sans';
@@ -75,36 +77,39 @@
 			margin-left: 0;
 		}
 		.nav2 {
-			margin-left: 43px;
+			margin-left: 6px;
 		}
 		.nav3 {
-			margin-left: 48px;
+			margin-left: 26px;
 		}
 		.nav4 {
-			margin-left: 42px; 
+			margin-left: 29px; 
 		}
 		.nav5 {
-			margin-left: 29px;
-			width: 80px;
-			background-color: #62a29e;
-			box-shadow: 0 3px 0px 0 #528b86;
-		}
-		.nav5:hover {
-			background-color: #528b86;
+			margin-left: 21px;
 		}
 		.nav6 {
-			margin-left: 33px;
+			margin-left: 24px;
 		}
 		.nav7 {
-			margin-left: 53px;
+			margin-left: 30px;
 		}
+		.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover, .nav6:hover, .nav7:hover {
+			background-color: #62a29e;
+			box-shadow: 0 3px 0 0 #528b86;
+		}
+		.nav1:active, .nav2:active, .nav3:active, .nav4:active, .nav5:active, .nav6:active, .nav7:active  {
+			background-color: #528b86;
+		}
+		
 		.nav4_li {
 			width: 8px;
 			height: 5px;
 			display: inline-block;
 			background: url(pic/topbar.png) no-repeat;
-			margin-right: 7px;
-			margin-bottom: 2px;
+			position: relative;
+			right: 15px;
+			bottom: 2px;
 		}
 		#search {
 			display: inline-block;
@@ -114,6 +119,7 @@
 			position: absolute;
 			top:33px;
 			right:0;
+			cursor: pointer;
 		}
 		/*main_headline样式*/
 		#headline {
@@ -636,13 +642,13 @@
 			<div class="topbar">
 				<div id="logo"><span class="logo_1">MODUS</span><span class="logo_2">versus</span></div>
 				<ul>
-					<li class="nav1 con"><a href="#">HOME</a></li>
-					<li class="nav2 con"><a href="#">ABOUT</a></li>
-					<li class="nav3 con"><a href="#">SERVICES</a></li>
-					<li class="nav4 con"><span class="nav4_li"></span><a href="#">PORTFOLIO</a></li>
-					<li class="nav5 con"><a href="#">BLOG</a></li>
-					<li class="nav6 con"><a href="#">FEATURES</a></li>
-					<li class="nav7 con"><a href="#">CONTACTS</a></li>
+					<li class="nav1 "><a href="#">HOME</a></li>
+					<li class="nav2 "><a href="#">ABOUT</a></li>
+					<li class="nav3 "><a href="#">SERVICES</a></li>
+					<li class="nav4 "><span class="nav4_li"></span><a href="#">PORTFOLIO</a></li>
+					<li class="nav5"><a href="#">BLOG</a></li>
+					<li class="nav6"><a href="#">FEATURES</a></li>
+					<li class="nav7"><a href="#">CONTACTS</a></li>
 					<span id="search"></span>
 				</ul>				
 			</div>
