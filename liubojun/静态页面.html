@@ -3,6 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MODUS versus</title>
+	<script type="text/javascript">
+		function secondnav( ) {
+			document.getElementsByTagName('ul')[1].style.display="block";
+		}
+		function miss( ) {
+			document.getElementsByTagName('ul')[1].style.display="none";
+		}
+	</script>
 	<style type="text/css">
 		* {
 			padding: 0;
@@ -18,6 +26,13 @@
 		}
 		ul li {
 			list-style: none;
+		}
+		.clearfix:after {
+			visibility: hidden;
+			height: 0;
+			display: block;
+			content: "";
+			clear: both;
 		}
 		@font-face {
 			font-family: 'opensans';
@@ -48,7 +63,6 @@
 		} 
 		.topbar {
 			width: 1156px;
-			overflow: hidden;
 			margin: 0 auto;
 			height: 80px;
 		}
@@ -71,13 +85,13 @@
 			font-size: 25px;
 			color: #fff;
 		}
-		.topbar ul {
+		.topbar>ul {
 			height: 80px;
-			padding-left: 212px;
-			overflow: hidden;
+			padding-right: 60px;
+			float: right;
 			position: relative;
 		}
-		.topbar ul li {
+		.topbar>ul>li {
 			float: left;
 			line-height: 30px;
 			margin-top: 25px;
@@ -125,7 +139,7 @@
 			display: inline-block;
 			background: url(pic/topbar.png) no-repeat;
 			position: absolute;
-			right: 48%;
+			right: 61%;
 			bottom: 48%;
 		}
 		#search {
@@ -137,6 +151,19 @@
 			top:33px;
 			right:0;
 			cursor: pointer;
+		}
+		/*二级菜单样式*/
+		#nav {
+			width: 80px;
+			position: absolute;
+			background-color: #76c7c0;
+			border-radius: 5px;
+			top:55px;
+		}
+		#nav li:hover {
+			background-color: #62a29e;
+			box-shadow: 0 3px 0 0 #528b86;
+			border-radius:5px;
 		}
 		/*main_headline样式*/
 		#headline {
@@ -258,7 +285,8 @@
 		}
 		#con2 {
 			margin-top: 27px;
-			font-family: 'OpenSans Italic'; 
+			font-family: 'opensans'; 
+			font-style: italic;
 		}
 		#con3 {
 			margin-top: 20px;
@@ -486,6 +514,7 @@
 			font-size: 16px;
 			font-family: 'opensans-extrabold';
 			text-align: center;
+			cursor: pointer;
 		}
 		.pages a:hover, .pages span:hover {
 			background-color: #e5655d;
@@ -653,17 +682,25 @@
 			height: 50px; 
 		}
 	</style>
+	
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<div class="topbar">
+			<div class="topbar clearfix">
 				<div id="logo"><span class="logo_1">MODUS</span><span class="logo_2">versus</span></div>
 				<ul>		
-					<li class="nav1 "><a href="#">HOME</a></li>
-					<li class="nav2 "><a href="#">ABOUT</a></li>
-					<li class="nav3 "><a href="#">SERVICES</a></li>
-					<li class="nav4 "><a href="#">PORTFOLIO</a></li>
+					<li class="nav1"><a href="#">HOME</a></li>
+					<li class="nav2"><a href="#">ABOUT</a></li>
+					<li class="nav3"><a href="#">SERVICES</a></li>
+					<li class="nav4"  onmouseover="secondnav( )" onmouseout="miss( )"><a href="#">PORTFOLIO</a>
+						<ul id="nav" style="display:none;">
+							<li><a href="#">one</a></li>
+							<li><a href="#">two</a></li>
+							<li><a href="#">three</a></li>
+							<li><a href="#">four</a></li>
+						</ul>
+					</li>
 					<li class="nav5"><a href="#">BLOG</a></li>
 					<li class="nav6"><a href="#">FEATURES</a></li>
 					<li class="nav7"><a href="#">CONTACTS</a></li>
