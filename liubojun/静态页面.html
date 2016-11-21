@@ -8,7 +8,7 @@
 			padding: 0;
 			margin: 0;
 			font-size: 12px;
-			font-family: 'Open Sans',sans-serif;
+			font-family: 'opensans',sans-serif;
 		}
 		body {
 			background-color: #f3f3f3;
@@ -19,13 +19,31 @@
 		ul li {
 			list-style: none;
 		}
+		@font-face {
+			font-family: 'opensans';
+			src:url('fonts/opensans-webfont.woff') format('woff'), 
+				url('fonts/opensans.ttf') format('truetype');			
+		}
+		@font-face {
+			font-family: 'opensans-extrabold';
+			src:url('fonts/opensans-extrabold.ttf') format('truetype'),
+				url('fonts/opensans-extrabold-webfont.woff') format('woff');
+		}
+		@font-face {
+			font-family: 'opensans-semibold';
+			src:url('fonts/opensans-semibold.ttf') format('truetype'),
+				url('fonts/opensans-semibold-webfont.woff') format('woff');
+		}
+		@font-face {
+			font-family: 'opensans-bold';
+			src:url('fonts/opensans-bold.ttf') format('truetype'),
+			url('fonts/opensans-bold-webfont.woff')format('woff');
+		}
 		#wrapper {
 			min-width: 1500px;
 		}
 		/*header样式*/
 		#header {
-			min-width: 1500px;
-			height: 80px;
 			background-color: #76c7c0;
 		} 
 		.topbar {
@@ -46,7 +64,7 @@
 			font-size:30px; 
 			color: #fff;
 			font-weight: bold;
-			font-family:'Open Sans';
+			font-family:'opensans-extrabold';
 		}
 		.logo_2 {
 			margin-left: 4px;
@@ -55,7 +73,7 @@
 		}
 		.topbar ul {
 			height: 80px;
-			padding-left: 21%;
+			padding-left: 212px;
 			overflow: hidden;
 			position: relative;
 		}
@@ -69,7 +87,7 @@
 			cursor: pointer;
 		}
 		.topbar ul li a {
-			font-family: 'Open Sans';
+			font-family: 'opensans';
 			font-size: 13px;
 			color: #fff;	
 		}
@@ -80,13 +98,13 @@
 			margin-left: 6px;
 		}
 		.nav3 {
-			margin-left: 26px;
+			margin-left: 20px;
 		}
 		.nav4 {
-			margin-left: 29px; 
+			margin-left: 27px; 
 		}
 		.nav5 {
-			margin-left: 21px;
+			margin-left: 20px;
 		}
 		.nav6 {
 			margin-left: 24px;
@@ -101,15 +119,14 @@
 		.nav1:active, .nav2:active, .nav3:active, .nav4:active, .nav5:active, .nav6:active, .nav7:active  {
 			background-color: #528b86;
 		}
-		
 		.nav4_li {
 			width: 8px;
 			height: 5px;
 			display: inline-block;
 			background: url(pic/topbar.png) no-repeat;
-			position: relative;
-			right: 15px;
-			bottom: 2px;
+			position: absolute;
+			right: 48%;
+			bottom: 48%;
 		}
 		#search {
 			display: inline-block;
@@ -132,6 +149,7 @@
 			font-size:20px;
 			color: #7f8c8c; 
 			margin-top: 25px;
+			font-family: 'opensans-semibold';
 		}
 		.rightone {
 			float: right;
@@ -179,13 +197,12 @@
 		}
 		.left_month {
 			font-size: 20px;
-			font-family: 'Open Sans';
-			padding-top: 13px;
+			font-family: 'opensans';
+			padding-top: 10px;
 		}
 		.left_date {
 			font-size: 30px;
-			font-family: 'Open Sans Extrabold';
-			padding-top: 5px;
+			font-family: 'opensans-extrabold';
 		}
 		.left_2, .left_3, .left_4, .left_5, .left_6 {
 			width: 70px;
@@ -224,13 +241,13 @@
 		.right_2 h3 {
 			color: #76c7c0;
 			font-size: 24px;
-			font-family: 'Open Sans Semibold';
+			font-family: 'opensans-semibold';
 			margin-top: 30px;
 		}
 		.right_2 p {
 			color: #7f8c8c;
 			font-size: 14px;
-			font-family: 'Open Sans';
+			font-family: 'opensans';
 			margin-top: 20px;
 		}
 		#con {
@@ -255,11 +272,10 @@
 		.right_2 span {
 			color: #e2534b;
 			font-size: 14px;
-			vertical-align: bottom;
 		}
 		.mark1 {
 			width: 16px;
-			height: 13px;
+			height: 12px;
 			display: inline-block;
 			background: url(pic/copy6.png) no-repeat;
 			margin-left: 7px;
@@ -267,7 +283,7 @@
 		}
 		.mark2 {
 			width: 15px;
-			height: 14px;
+			height: 12px;
 			display: inline-block;
 			background: url(pic/copy7.png) no-repeat;
 			margin-left: 20px;
@@ -325,23 +341,22 @@
 		/*categories*/
 		.categories,.recent_posts,.tags,.archive {
 			width: 270px;
-			margin-bottom:25px; 
+			margin-bottom:30px; 
 		}
 		.categories h3 {
-			font-family: 'Open Sans Extrabold';
+			font-family: 'opensans-extrabold';
 			font-size: 16px;
 			color: #7f8c8c;
 		}
 		.categories ul{
 			margin-top: 25px;
 			margin-left: 10px;
-			padding-bottom: 21px;
 		}
 		.categories ul li {
 			margin-bottom: 12px;
 		}
 		.categories ul li a {
-			font-family: 'Open Sans Semibold';
+			font-family: 'opensans-semibold';
 			font-size: 14px;
 			color: #e2534b;
 			margin-left: 10px;
@@ -356,7 +371,7 @@
 		/*recent posts*/
 		.recent_posts h3 {
 			font-size: 16px;
-			font-family: Open Sans Extrabold;
+			font-family: 'opensans-extrabold';
 			color: #7f8c8c;
 		}
 		.recent_posts ul {
@@ -368,7 +383,7 @@
 			padding-bottom: 13px;
 		}
 		.recent_posts ul li a {
-			font-family: 'Open Sans Semibold';
+			font-family: 'opensans-semibold';
 			font-size: 14px;
 			color: #e2534b;
 			margin-left: 11px;
@@ -378,7 +393,7 @@
 		.recent_posts ul li p {
 			margin-left: 27px;
 			color: #7f8c8c;
-			font-family: Open Sans;
+			font-family: opensans;
 			margin-top: 3px;
 		}
 		.point_1 {
@@ -393,7 +408,7 @@
 		/*tags样式*/
 		.tags h3 {
 			font-size: 16px;
-			font-family: 'Open Sans Extrabold';
+			font-family: 'opensans-extrabold';
 			color: #7f8c8c;
 			margin-bottom: 20px;
 		}
@@ -409,7 +424,7 @@
 		.tags span a {
 			color: #fff;
 			font-size: 14px;
-			font-family: 'Open Sans';
+			font-family: 'opensans';
 			line-height: 10px;
 			display: inline-block;
 		}
@@ -428,11 +443,11 @@
 		/*archive样式*/
 		.archive h3 {
 			font-size: 16px;
-			font-family: 'Open Sans Extrabold';
+			font-family: 'opensans-extrabold';
 			color: #7f8c8c; 
 		}
 		.archive ul {
-			margin-top: 25px;
+			margin-top: 20px;
 		}
 		.archive ul li {
 			margin-bottom: 15px;
@@ -441,7 +456,7 @@
 		.archive ul li a {
 			font-size: 14px;
 			color: #e2534b;
-			font-family: 'Open Sans';
+			font-family: 'opensans';
 			margin-left: 11px;
 		}
 		.point_2 {
@@ -449,7 +464,7 @@
 			height: 14px;
 			display: inline-block;
 			background: url(pic/copy3.png) no-repeat;
-			vertical-align: bottom;
+			vertical-align: text-top;
 		}
 		/*切换页面样式*/
 		.pages {
@@ -469,7 +484,7 @@
 			vertical-align: middle;
 			color: #fff;
 			font-size: 16px;
-			font-family: 'Open Sans Extrabold';
+			font-family: 'opensans-extrabold';
 			text-align: center;
 		}
 		.pages a:hover, .pages span:hover {
@@ -501,7 +516,7 @@
 			overflow: hidden;
 		}
 		.footleft {
-			width: 360px;
+			width: 368px;
 			float: left;
 		}
 		.footleft h3 {
@@ -515,21 +530,22 @@
 		}
 		.footleft p span {
 			font-size: 20px;
-			font-family: 'Open Sans SemiboldItalic';
-			margin-left: 15px;
+			font-family: 'opensans-semibold';
+			font-style: italic;
+			margin-left: 21px;
 		}
 		#temp {
 			margin-left: 21px;
 		}
 		.footleft1 {
 			float: left;
-			margin-left: 20px;
+			margin-left: 30px;
 		}
 		.footleft1 h3, .footright h3 {
 			padding-top: 88px;
 			font-size: 20px;
 			color: #3f6a66;
-			font-family: 'Open Sans Bold';
+			font-family: 'opensans-bold';
 		}
 		.footleft1 ul, .footright ul {
 			margin-left: 18px;
@@ -545,7 +561,7 @@
 		}
 		.footright {
 			float: left;
-			margin-left: 104px;
+			margin-left: 75px;
 		}
 		.pipe {
 			background: url(pic/point.png) no-repeat;
@@ -555,16 +571,18 @@
 		}
 		.footright1{
 			float: left;
-			margin-left: 82px;
+			margin-left: 75px;
 		}
 		.footright1 h3 {
 			padding-top: 88px;
 			font-size: 20px;
 			color: #fff;
-			font-family: 'Open Sans Italic','Open Sans Bold';
+			font-family: 'opensans';
+			font-style: italic;
 		}
 		.footright1 h3 span {
-			font-weight: bold; 
+			font-family: 'opensans-bold'; 
+			font-style: normal;
 			font-size: 20px;
 		}
 		.footright1 p {
@@ -602,7 +620,7 @@
 		}
 		#footer_2 span {
 			font-size: 12px;
-			font-family: 'Open Sans';
+			font-family: 'opensans';
 			color: #fff;
 		}
 		.tmp1, .tmp2, .tmp3, .tmp4 {
@@ -641,22 +659,23 @@
 		<div id="header">
 			<div class="topbar">
 				<div id="logo"><span class="logo_1">MODUS</span><span class="logo_2">versus</span></div>
-				<ul>
+				<ul>		
 					<li class="nav1 "><a href="#">HOME</a></li>
 					<li class="nav2 "><a href="#">ABOUT</a></li>
 					<li class="nav3 "><a href="#">SERVICES</a></li>
-					<li class="nav4 "><span class="nav4_li"></span><a href="#">PORTFOLIO</a></li>
+					<li class="nav4 "><a href="#">PORTFOLIO</a></li>
 					<li class="nav5"><a href="#">BLOG</a></li>
 					<li class="nav6"><a href="#">FEATURES</a></li>
 					<li class="nav7"><a href="#">CONTACTS</a></li>
 					<span id="search"></span>
+					<span class="nav4_li"></span>
 				</ul>				
 			</div>
 		</div>
 		<div id="headline">
 			<div class="topbar">
 				<p class="leftone">BLOG</p>
-				<p class="rightone">Home&nbsp;/&nbsp;Blog</p>
+				<p class="rightone">Home&nbsp;&nbsp;/&nbsp;&nbsp;Blog</p>
 			</div>	
 		</div>
 		<div id="main">
