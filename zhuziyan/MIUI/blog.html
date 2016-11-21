@@ -1,271 +1,418 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>blog</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="blog.css">
+  <title>blog</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="blog.css">
 </head>
+
 <body>
-<div class="header1">
-  <div class="header1_center">
-	<div class="header1_left">
-		<span class="left1">MODUS</span>
+  <div class="header1">
+    <div class="header1_center">
+      <div class="header1_left">
+        <span class="left1">MODUS</span>
         <span class="left2">versus</span>
-	</div>
-	<div class="header1_right">
-	<ul>
-		<li><a href="#">HOME</a></li>
-		<li><a href="#">ABOUT</a></li>
-		<li><a href="#">SERVICES</a></li>
-		<li><a href="#">PORTFOLIO</a></li>
-		<li><a href="#">BLOG</a></li>
-		<li><a href="#">FEATURES</a></li>
-		<li id="show"><a href="#">CONTACTS</a>
-		<ul id="under">
-			<li class="adjion"><a href="#">Design</a></li>
-			<li id="adjion" class="adjion"><a href="#">Development</a>
-			<ul id="menu">
-				<li class="menu"><a href="#">Home</a></li>
-				<li class="menu"><a href="#">Products</a></li>
-			</ul>
-			</li>
-			<li class="adjion"><a href="#">Consultancy</a></li>
-			<li class="adjion"><a href="#">Service</a></li>
-		</ul>
-		</li>
-		<li><img src="img/ps23.png"></li>
-	</ul>
-	</div>
-</div>
-</div>
-<div class="header2">
-<div class="center">
-	<div class="left">BLOG
-	<span></span>
-	</div>
-	<div class="right">HOME/BLOG</div>
-</div>
-</div>
-<div class="content1">
-	<div class="left">
-	<div class="may_number">
-		<p class="may">MAY</p>
-		<p class="number">26</p>
-	</div>
-		<span></span>
-	</div>
-	<div class="right">
-		<h1>CATEGORIES</h1>
-		<ul>
-			<li><a href="#">LOGO DESING</a></li>
-			<li><a href="#">WEB DESING</a></li>
-			<li><a href="#">PHOTOGRAPHY</a></li>
-			<li><a href="#">WORDPRESS</a></li>
-			<li><a href="#">ICONS</a></li>
-		</ul>
-		<div class="recent">
-			<h1>RECENT POSTS</h1>
-			<div class="velit">
-				<a href="#">Curabitur vitae velit </a>
-				<p>25 May 2013</p>
-			</div>
-			<div class="velit">
-				<a href="#">Curabitur vitae velit</a>
-				<p>25 May 2013</p>
-			</div>
-			<div class="velit">
-				<a href="#">Curabitur vitae velit</a>
-				<p>25 May 2013</p>
-			</div>
-			<div class="velit">
-				<a href="#">Curabitur vitae velit</a>
-				<p>25 May 2013</p>
-			</div>
-		</div>
-	</div>
-	<div class="main">
-		<img src="img/houmiandehoumian.png">
-		<h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
-		<p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
-		<a href="#" class="design">Design,Temple</a>
-		<a href="#" class="comment">22</a>
-		<p class="sub">
-			The first day to go to school, I am so nervous, but the moment I see the campus, I feel eased. There are so many trees and flowers around the school, it is like a garden, making people very comfortable. Now I will always walk around the school and appreciate its beauty. I like my campus so much and I am so proud of it.
-		</p>
-		<a style="display: block;" href="#">continue reading</a>
-	</div>
-</div>
-<div class="content2">
-	<div class="left">
-	<div class="may_number">
-		<p class="may">MAY</p>
-		<p class="number">19</p>
-	</div>
-		<span></span>
-	</div>
-	<div class="right">
-		<h1>TAGS</h1>
-		<div class="tags">
-			<a href="#" style="width:91px; ">Maecenas</a>
-			<a href="#" style="width: 51px;">Nunc</a>
-			<a href="#" style="width:81px;">Praesent</a>
-			<a href="#" style="width:51px;">Nunc</a>
-			<a href="#" style="width:81px;">Praesent</a>
-			<a href="#" style="width:51px;">Nunc</a>
-			<a href="#" style="width:91px;">Maecenas</a>
-			<a href="#" style="width:81px;">Praesent</a>
-			<a href="#" style="width:51px;">Nunc</a>
-		</div>
-		<div class="abchive">ABCHIVE</div>
-		<a href="#" class="num">2013</a>
-		<a href="#" class="num">2012</a>
-		<a href="#" class="num">2011</a>
-	</div>
-	<div class="main">
-		<div class="picture"><img id="pic1" src="img/liangzhaoweihoumian.png">
-        <img id="pic2" src="img/liangzhaowei.png">
-        <img id="left" onclick="change1()" src="img/ps.5.png">
-        <img id="right" onclick="change2()" src="img/ps25.png">
+      </div>
+      <div class="header1_right">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li id="show"><a href="#">CONTACTS</a>
+            <ul id="under">
+              <li class="adjion"><a href="#">Design</a></li>
+              <li id="adjion" class="adjion"><a href="#">Development</a>
+                <ul id="menu">
+                  <li class="menu"><a href="#">Home</a></li>
+                  <li class="menu"><a href="#">Products</a></li>
+                </ul>
+              </li>
+              <li class="adjion"><a href="#">Consultancy</a></li>
+              <li class="adjion"><a href="#">Service</a></li>
+            </ul>
+          </li>
+          <li><img src="img/ps23.png"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header2">
+    <div class="center">
+      <div class="left">BLOG
+        <span></span>
+      </div>
+      <div class="right">HOME/BLOG</div>
+    </div>
+  </div>
+  <div id="blog1" class="blog">
+    <div class="content1">
+      <div class="left">
+        <div class="may_number">
+          <p class="may">MAY</p>
+          <p class="number">26</p>
+        </div>
+        <span></span>
+      </div>
+      <div class="right">
+        <h1>CATEGORIES</h1>
+        <ul>
+          <li><a href="#">LOGO DESING</a></li>
+          <li><a href="#">WEB DESING</a></li>
+          <li><a href="#">PHOTOGRAPHY</a></li>
+          <li><a href="#">WORDPRESS</a></li>
+          <li><a href="#">ICONS</a></li>
+        </ul>
+        <div class="recent">
+          <h1>RECENT POSTS</h1>
+          <div class="velit">
+            <a href="#">Curabitur vitae velit </a>
+            <p>25 May 2013</p>
+          </div>
+          <div class="velit">
+            <a href="#">Curabitur vitae velit</a>
+            <p>25 May 2013</p>
+          </div>
+          <div class="velit">
+            <a href="#">Curabitur vitae velit</a>
+            <p>25 May 2013</p>
+          </div>
+          <div class="velit">
+            <a href="#">Curabitur vitae velit</a>
+            <p>25 May 2013</p>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <img src="img/houmiandehoumian.png">
+        <h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
+        <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
+        <a href="#" class="design">Design,Temple</a>
+        <a href="#" class="comment">22</a>
+        <p class="sub">
+          The first day to go to school, I am so nervous, but the moment I see the campus, I feel eased. There are so many trees and flowers around the school, it is like a garden, making people very comfortable. Now I will always walk around the school and appreciate its beauty. I like my campus so much and I am so proud of it.
+        </p>
+        <a style="display: block;" href="#">continue reading</a>
+      </div>
+    </div>
+    <div class="content2">
+      <div class="left">
+        <div class="may_number">
+          <p class="may">MAY</p>
+          <p class="number">19</p>
+        </div>
+        <span></span>
+      </div>
+      <div class="right">
+        <h1>TAGS</h1>
+        <div class="tags">
+          <a href="#" style="width:91px; ">Maecenas</a>
+          <a href="#" style="width: 51px;">Nunc</a>
+          <a href="#" style="width:81px;">Praesent</a>
+          <a href="#" style="width:51px;">Nunc</a>
+          <a href="#" style="width:81px;">Praesent</a>
+          <a href="#" style="width:51px;">Nunc</a>
+          <a href="#" style="width:91px;">Maecenas</a>
+          <a href="#" style="width:81px;">Praesent</a>
+          <a href="#" style="width:51px;">Nunc</a>
+        </div>
+        <div class="abchive">ABCHIVE</div>
+        <a href="#" class="num">2013</a>
+        <a href="#" class="num">2012</a>
+        <a href="#" class="num">2011</a>
+      </div>
+      <div class="main">
+        <div class="picture"><img id="pic1" src="img/liangzhaoweihoumian.png">
+          <img id="pic2" src="img/liangzhaowei.png">
+          <img id="left" onclick="change1()" src="img/ps.5.png">
+          <img id="right" onclick="change2()" src="img/ps25.png">
         </div>
         <h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
-		<p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
-		<a href="#" class="design">Design,Temple</a>
-		<a href="#" class="comment">22</a>
-	</div>
-	</div>
-	<div class="content3">
-      	<div class="left">
-      	  <div class="may_number">
-		<p class="may">MAY</p>
-		<p class="number">16</p>
-	</div>
-		<span></span>	
-      	</div>
-      	<div class="right">
-      	  <div class="play">
-      	  	<embed src="music/iqiyi.pgf" type="audio/x-pn-realaudio-plugin" console="Clip1" controls="controls" height="460" width="770" autostart="false">
-      	  </div>
-      	   <h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
-		   <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
-		   <a href="#" class="design">Design,Temple</a>
-		   <a href="#" class="comment">22</a>
-      	</div>
-   </div>
-   <div class="content4">
-   	<div class="left">
-      	  <div class="may_number">
-		<p class="may">MAY</p>
-		<p class="number">12</p>
-	</div>
-		<span></span>	
-      	</div>
-      	<div class="right">
-      		<h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
-		   <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
-		   <a href="#" class="design">Design,Temple</a>
-		   <a href="#" class="comment">22</a>
-		   <p class="sub">
-			The first day to go to school, I am so nervous, but the moment I see the campus, I feel eased. There are so many trees and flowers around the school, it is like a garden, making people very comfortable. Now I will always walk around the school and appreciate its beauty. I like my campus so much and I am so proud of it.
-		</p>
-      	</div>
-   </div>
-   <div class="content5">
-   	<div class="left">
-      	  <div class="may_number">
-		<p class="may">MAY</p>
-		<p class="number">12</p>
-	</div>
-		<span></span>	
-      	</div>
-    <div class="right">
-        <div class="music">
-        	<EMBED src="music/8c44b02a0e9413d1bb41474fbf1990bd (1).mp3" autostart="false" loop="true" style="FILTER: Xray" width="770" height="100">
-        </div>
-    	<h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
-	    <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
-		<a href="#" class="design">Design,Temple</a>
-		<a href="#" class="comment">22</a>
+        <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
+        <a href="#" class="design">Design,Temple</a>
+        <a href="#" class="comment">22</a>
+      </div>
     </div>
-   </div>
-   <div class="switch">
-    <a href="#"><</a>
-   	<a href="#">1</a>
-   	<a href="#">2</a>
-   	<a href="#">3</a>
-   	<a href="#">4</a>
-   	<a href="#">5</a>
-   	<a href="#">...</a>
-   	<a href="#">10</a>
-   	<a href="#">11</a>
-   	<a href="#">12</a>
-   	<a href="#">></a>
-   </div>
-   <div class="footer">
-   	<div class="line1">
-   		<div class="row1">
-   		<div style="width: 370px;height: 80px;">
-   		<span class="modus">MODUS</span>	
-   		<span class="versus">versus</span>
-   		</div>
-   		<p>The first day to go to school, but the moment I see the campus, I feel eased. There are so many trees and flowers around the school, it is like a garden, making people very comfortable.</p>
-   		<p class="phone">phone:<span class="em">182 2569 5896</span></p>
-   		<p>e-mail:<span class="em">info@modus.versus</span></p>
-   		</div>
-   		<div class="row2">
-   			<h1>Company</h1>
-            <p>> About</p>
-            <p>> FAQ</p>
-            <p>> Contact</p>
-            <p>> Firms</p>
-            <p>> Privacy</p>
-            <p>> Testimonials</p>
-   		</div>
-   		<div class="row3">
-   			<h1>Community</h1>
-   			<p>> Blog</p>
-   			<p>> Forum</p>
-   			<p>> Support</p>
-   			<p>> Newsletter</p>
-   		</div>
-   		<div class="row4">
-   			<p>from the<span class="em"> BLOG</span></p>
-   			<div class="lorem">
-   				<img src="img/ps35.png">
-   				<div class="inline">
-   				<p>he first day to go to school, but the moment I see the campus</p>
-   				<span>26May,2013</span>
-   				</div>
-   			</div>
-   			<div class="lorem">
-   				<img src="img/ps35.png">
-   				<div class="inline">
-   				<p>he first day to go to school, but the moment I see the campus</p>
-   				<span>26May,2013</span>
-   				</div>
-   			</div>
-   		</div>
-   	</div>
-   	<div class="line2">
-   		<span class="modusversus">2013ModusVersus</span>
-   		<div class="floatright">
-   		<img class="pic" src="img/ps12.png">
-   		<img class="pic" src="img/ps13.png">
-   	    <img class="pic" src="img/ps14psd.png">
-   	    <img class="pic" src="img/ps15.png">
-   	    </div>
-   	</div>
-   </div>
+    <div class="content3">
+      <div class="left">
+        <div class="may_number">
+          <p class="may">MAY</p>
+          <p class="number">16</p>
+        </div>
+        <span></span>
+      </div>
+      <div class="right">
+        <div class="play">
+          <video width="770" height="460" controls="controls"> <source src="video/9866781-1-hd.mp4" type="video/mp4" /></video>
+        </div>
+        <h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
+        <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
+        <a href="#" class="design">Design,Temple</a>
+        <a href="#" class="comment">22</a>
+      </div>
+    </div>
+    <div class="content4">
+      <div class="left">
+        <div class="may_number">
+          <p class="may">MAY</p>
+          <p class="number">12</p>
+        </div>
+        <span></span>
+      </div>
+      <div class="right">
+        <h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
+        <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
+        <a href="#" class="design">Design,Temple</a>
+        <a href="#" class="comment">22</a>
+        <p class="sub">
+          The first day to go to school, I am so nervous, but the moment I see the campus, I feel eased. There are so many trees and flowers around the school, it is like a garden, making people very comfortable. Now I will always walk around the school and appreciate its beauty. I like my campus so much and I am so proud of it.
+        </p>
+      </div>
+    </div>
+    <div class="content5">
+      <div class="left">
+        <div class="may_number">
+          <p class="may">MAY</p>
+          <p class="number">12</p>
+        </div>
+        <span></span>
+      </div>
+      <div class="right">
+        <div class="music">
+          <EMBED src="music/8c44b02a0e9413d1bb41474fbf1990bd (1).mp3" autostart=false loop="1" width="770" height="100">
+        </div>
+        <h1>Duis dapibus aliquam mi ,eget euismod sem scelerisque ut.</h1>
+        <p>posted by <a href="#">Admin</a> in <a href="#">Wordpress</a></p>
+        <a href="#" class="design">Design,Temple</a>
+        <a href="#" class="comment">22</a>
+      </div>
+    </div>
+  </div>
+  <div id="blog2" class="blog" style="width: 50px;height: 50px; background: red;display: none;margin: 0 auto;text-align: center;">2
+  </div>
+  <div id="blog3" class="blog" style="width: 50px;height: 50px; background: blue;display: none;margin: 0 auto;text-align: center;">3
+  </div>
+  <div id="blog4" class="blog" style="width: 50px;height: 50px; background: #abc342;display: none;margin: 0 auto;text-align: center;">4
+  </div>
+  <div id="blog5" class="blog" style="width: 50px;height: 50px; background: #f0f;display: none;margin: 0 auto;text-align: center;">5
+  </div>
+  <div id="blog6" class="blog" style="width: 50px;height: 50px; background: #0f0;display: none;margin: 0 auto;text-align: center;">6
+  </div>
+  <div id="blog7" class="blog" style="width: 50px;height: 50px; background: #0f0;display: none;margin: 0 auto;text-align: center;">7
+  </div>
+  <div id="blog8" class="blog" style="width: 50px;height: 50px; background: #0f0;display: none;margin: 0 auto;text-align: center;">8
+  </div>
+  <div id="blog9" class="blog" style="width: 50px;height: 50px; background: #0f0;display: none;margin: 0 auto;text-align: center;">9
+  </div>
+  <div id="blog10" class="blog" style="width: 50px;height: 50px; background: #0f0;display: none;margin: 0 auto;text-align: center;">10
+  </div>
+  <div id="blog11" class="blog" style="width: 50px;height: 50px; background: #ab2fff;display: none;margin: 0 auto;text-align: center;">11
+  </div>
+  <div id="blog12" class="blog" style="width: 50px;height: 50px; background: #999;display: none;margin: 0 auto;text-align: center;">12
+  </div>
+  <div id="alert">亲，这已经是第一页了哦</div>
+  <div id="alert1">亲，这已经是最后一页了哦</div>
+  <div class="switch">
+    <a onclick="change3(0)" href="#">
+      <</a>
+        <a onclick="change5(1)" href="#">1</a>
+        <a onclick="change5(2)" href="#">2</a>
+        <a onclick="change5(3)" href="#">3</a>
+        <a onclick="change5(4)" href="#">4</a>
+        <a onclick="change5(5)" href="#">5</a>
+        <a onclick="change5()" href="#">...</a>
+        <a onclick="change5(10)" href="#">10</a>
+        <a onclick="change5(11)" href="#">11</a>
+        <a onclick="change5(12)" href="#">12</a>
+        <a onclick="change4(20)" href="#">></a>
+  </div>
+  <div class="footer">
+    <div class="line1">
+      <div class="row1">
+        <div style="width: 370px;height: 80px;">
+          <span class="modus">MODUS</span>
+          <span class="versus">versus</span>
+        </div>
+        <p>The first day to go to school, but the moment I see the campus, I feel eased. There are so many trees and flowers around the school, it is like a garden, making people very comfortable.</p>
+        <p class="phone">phone:<span class="em">182 2569 5896</span></p>
+        <p>e-mail:<span class="em">info@modus.versus</span></p>
+      </div>
+      <div class="row2">
+        <h1>Company</h1>
+        <p>> About</p>
+        <p>> FAQ</p>
+        <p>> Contact</p>
+        <p>> Firms</p>
+        <p>> Privacy</p>
+        <p>> Testimonials</p>
+      </div>
+      <div class="row3">
+        <h1>Community</h1>
+        <p>> Blog</p>
+        <p>> Forum</p>
+        <p>> Support</p>
+        <p>> Newsletter</p>
+      </div>
+      <div class="row4">
+        <p>from the<span class="em"> BLOG</span></p>
+        <div class="lorem">
+          <img src="img/ps35.png">
+          <div class="inline">
+            <p>he first day to go to school, but the moment I see the campus</p>
+            <span>26May,2013</span>
+          </div>
+        </div>
+        <div class="lorem">
+          <img src="img/ps35.png">
+          <div class="inline">
+            <p>he first day to go to school, but the moment I see the campus</p>
+            <span>26May,2013</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line2">
+      <span class="modusversus">2013ModusVersus</span>
+      <div class="floatright">
+        <img class="pic" src="img/ps12.png">
+        <img class="pic" src="img/ps13.png">
+        <img class="pic" src="img/ps14psd.png">
+        <img class="pic" src="img/ps15.png">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  function change1() {
+    document.getElementById("pic2").style.display = "block"
+    document.getElementById("pic1").style.display = "none"
+  }
 
-<script type="text/javascript">
-	function change1 () {
-		document.getElementById("pic2").style.display = "block"
-		document.getElementById("pic1").style.display = "none"
-	}
-	function change2 () {
-		document.getElementById("pic1").style.display = "block"
-		document.getElementById("pic2").style.display = "none"
-	}
-	
-</script>
+  function change2() {
+    document.getElementById("pic1").style.display = "block"
+    document.getElementById("pic2").style.display = "none"
+  }
+  var i = 1
+
+  function change3(shift) {
+    if (shift === 0) {
+      // statement
+      i--
+      if (i==0) {
+      	// statement
+      	i = 1
+  
+      setTimeout(function () {
+      document.getElementById("alert").style.display = "block"
+
+      }, 300)
+      setTimeout(function () {
+      document.getElementById("alert").style.display = "none"
+
+      }, 1300)
+      }  
+      var blog = "blog" + i
+      num()
+      document.getElementById(blog).style.display = "block"
+    }
+  }
+
+  function change5(shift) {
+    if (shift === 1) {
+      // statement
+      num()
+      document.getElementById("blog1").style.display = "block"
+      i=1
+    } else if (shift === 2) {
+      // statement
+      num()
+      document.getElementById("blog2").style.display = "block"
+      i=2
+    } else if (shift === 3) {
+      // statement
+      num()
+      document.getElementById("blog3").style.display = "block"
+      i = 3
+    } else if (shift === 4) {
+      // statement
+      num()
+      document.getElementById("blog4").style.display = "block"
+      i=4
+    } else if (shift === 5) {
+      // statement
+      num()
+      document.getElementById("blog5").style.display = "block"
+      i=5
+    } else if (shift === 6) {
+      // statement
+      num()
+      document.getElementById("blog6").style.display = "block"
+      i=6
+    } else if (shift === 7) {
+      // statement
+      num()
+      document.getElementById("blog7").style.display = "block"
+      i=7
+    } else if (shift === 8) {
+      // statement
+      num()
+      document.getElementById("blog8").style.display = "block"
+      i=8
+    } else if (shift === 9) {
+      // statement
+      num()
+      document.getElementById("blog9").style.display = "block"
+      i=9
+    } else if (shift === 10) {
+      // statement
+      num()
+      document.getElementById("blog10").style.display = "block"
+      i=10
+    } else if (shift === 11) {
+      // statement
+      num()
+      document.getElementById("blog11").style.display = "block"
+      i=11
+    } else if (shift === 12) {
+      // statement
+      num()
+      document.getElementById("blog12").style.display = "block"
+      i=12
+    }
+  }
+  function change4(shift) {
+    if (shift === 20) {
+      // statement
+      i++
+       if (i===13) {
+      	// statement
+      	i = 12
+      	 setTimeout(function () {
+      document.getElementById("alert1").style.display = "block"
+
+      }, 300)
+      setTimeout(function () {
+      document.getElementById("alert1").style.display = "none"
+
+      }, 1300)
+      }
+      var blog = "blog" + i
+      num()
+      document.getElementById(blog).style.display = "block"
+     
+    }
+  }
+
+  function num() {
+    var num = document.getElementsByClassName("blog")
+    console.log (num.length)
+    for (var i = num.length - 1; i >= 0; i--) {
+      num[i].style.display = "none"
+    }
+  }
+  </script>
 </body>
+
 </html>
