@@ -3,14 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MODUS versus</title>
-	<script type="text/javascript">
-		function secondnav( ) {
-			document.getElementsByTagName('ul')[1].style.display="block";
-		}
-		function miss( ) {
-			document.getElementsByTagName('ul')[1].style.display="none";
-		}
-	</script>
 	<style type="text/css">
 		* {
 			padding: 0;
@@ -64,7 +56,6 @@
 		.topbar {
 			width: 1156px;
 			margin: 0 auto;
-			height: 80px;
 		}
 		#logo {
 			height: 80px;
@@ -324,32 +315,44 @@
 			background:url(pic/copy8.png) no-repeat;
 			margin-left: 8px;
 		}
-		.container {
-			width: 770px;
+		#container {
+			width:770px;
 			height: 460px;
-			border:1px solid #000;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
 		}
-		.leftarrow {
-			width: 50px;
+		#list {
+			width:5390px;
+			height:300px;
+			position: absolute; 
+		}
+		#list img {
+			float: left;
+			width:770px;
+			height: 460px;
+		}
+	  	.arrow {
+	  		width: 50px;
 			height: 57px;
-			background: #e8645a url(pic/leftarrow.png) no-repeat center;
-			border-radius: 5px;
+	  		display: none;
+	  		border-radius: 5px;
 			box-shadow: 0 3px 0px 0 #e2534b;
 			position: absolute;
 			top:201px;
+	  	}
+	  	#container:hover .arrow {
+			display: block;
+	  	}
+	  	#leftarrow {
+			background: #e8645a url(pic/leftarrow.png) no-repeat center;	
 		}
-		.rightarrow {
-			width: 50px;
-			height: 57px;
+		#rightarrow {
 			background: #e8645a url(pic/rightarrow.png) no-repeat center;
-			border-radius: 5px;
-			box-shadow: 0 3px 0px 0 #e2534b;
-			position: absolute;
-			top:201px;
 			right: 0;
 		}
-		.leftarrow:hover, .rightarrow:hover {
-			backgrsound-color: #e2534b;
+		#leftarrow:hover, #rightarrow:hover {
+			background-color: #e2534b;
 			cursor: pointer;
 		}
 		.video {
@@ -744,9 +747,18 @@
 						<div class="left_3"></div>
 					</div>
 					<div class="right_wrap">
-						<div class="container">
-							<div class="leftarrow"></div>
-							<div class="rightarrow"></div>
+						<div id="container">
+					  		<div id="list" style="left:-770px">
+						    	<img src="pic/photo5.png" alt="1"/>
+						        <img src="pic/photo4.png" alt="1"/>
+						        <img src="pic/photo2.png" alt="2"/>
+						        <img src="pic/photo6.png" alt="3"/>
+						        <img src="pic/photo3.png" alt="4"/>
+						        <img src="pic/photo5.png" alt="5"/>
+						        <img src="pic/photo4.png" alt="5"/>
+					  		</div> 
+					  		<div id="leftarrow"  class="arrow" ></div>
+					  		<div id="rightarrow" class="arrow" ></div>
 						</div>
 						<div class="right_2">
 							<h3>Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h3>
@@ -917,5 +929,83 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function secondnav( ) {
+			document.getElementsByTagName('ul')[1].style.display="block";
+		}
+		function miss( ) {
+			document.getElementsByTagName('ul')[1].style.display="none";
+		}
+		var container=document.getElementById('container');
+	var list=document.getElementById('list');
+	var timer;
+	var len=5;
+	var inteval=3000;
+	var animated=false;
+	var index=1;
+	var prev=document.getElementById('leftarrow');
+	var next=document.getElementById('rightarrow');
+	function animate(offset) {
+
+		
+			if (offset==0) {
+				return;
+			} 
+			animated= true ;
+			var interval = 300;
+			var time = 10;
+			var speed = offset/(interval/time);
+			var left = parseInt(list.style.left) + offset;
+		var go = function (){
+			if ((speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)){
+				list.style.left = parseInt(list.style.left) + speed + 'px';
+				setTimeout(go, time);
+			}else{
+				list.style.left = left + 'px';
+				if (left > -770) {
+					list.style.left = -770 * len + 'px';
+				}
+				if (left < (-770 * len)) {
+					list.style.left = '-770px';
+				}
+				animated=false;
+			}
+		}
+		go();
+	}
+
+	prev.onclick = function (){
+		if(animated){
+			return;
+		}
+		if(index == 1){
+			index = 5;
+		}else{
+			index--;
+		}
+		animate(770);
+	}
+	next.onclick = function (){
+		if (animated) {
+			return;
+		}
+		if(index == 5){
+			index = 1;
+		}else{
+			index++;
+		}
+		animate(-770);
+	}
+
+	function play(){
+		timer = setTimeout( function (){ next.onclick(); play();}, inteval);		
+	}
+	function stop() {
+		clearTimeout(timer);
+	}
+	container.onmouseover=stop;
+	container.onmouseout=play;
+	play();
+	</script>
 </body>
 </html>
