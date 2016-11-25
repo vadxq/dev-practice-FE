@@ -1,0 +1,927 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MIUI官方论坛 - MIUI论坛</title>
+<style>
+html,body{
+width:100%;}
+*{margin:0;
+padding:0;}
+body{background-color:rgb(249, 249, 249);
+}
+#header{height:120px;
+margin:0 auto;
+max-width:960px;
+
+background-color:rgb(249, 249, 249);}
+div.left{float:left;
+margin-top:10px;
+
+}
+div.img{margin-left:2.4%;
+	float:left;
+	margin-top:50px;
+padding-left:27px;
+font-size:12px;
+height:21px;
+color:#fc7050;
+line-height:21px;
+background-image:url(http://www.miui.com/static/image/miui/base/QRCode_tg.png);
+text-decoration:none;
+width:5.9%;
+font-family: "Microsoft YaHei", Tahoma, Helvetica, SimSun, sans-serif;
+}
+div.um{float:right;
+    padding-top: 10px;
+}
+
+
+div.um ul li{margin-left:5px;
+margin-top:20px;
+	float:right;
+display:inline-block;}
+div.um ul li a{
+	color: #7c7c7c;;
+text-align:center;
+font: 12px/1.5 Microsoft YaHei,Tahoma,Helvetica,'SimSun',sans-serif;
+float:right;}
+div.um ul li a:hover{color:#fc7050;}
+div.um ul li ul{display:none;
+position:absolute;
+left:1310px;
+top:55px;
+
+
+    
+    z-index: 10;
+    
+    background-color: #fff;
+   
+}
+div.um ul li ul li {float:none;
+padding:4px 0px;
+z-index: 10;
+display:block;
+background-color:white;}
+div.um ul li:hover ul{display:block;}
+.switchwidth {margin-top:-5px;
+cursor:pointer;
+    background: url(http://static.bbs.miui.com/static/image/miui/base/imghack.png) no-repeat -22px 5px transparent;
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+}
+div.um ul li ul li  a{background-color:white;
+
+width:118px;
+text-align:center;
+}
+
+a.centermi:hover{position:absolute;
+left:1310px;
+top:27px;
+border-radius: 5px 5px 0 0;
+    height: 30px;
+    border-bottom: 1px solid #d1d1d1;
+    background-color: #f8f8f8;
+	width:118px;
+	text-align:center;
+	
+}
+
+#scbar_txt{margin-top:10px;
+	color: #606060;
+    width: 290px;
+	border-radius: 5px;
+    background-color: transparent;
+    padding: 4px 0 0 10px;
+    height: 24px;
+    border:1px solid #fc7050;
+	outline-color:#fc7050;
+}
+a.bottom{margin-bottom:8px;}
+
+
+
+
+
+
+
+
+
+
+a{text-decoration:none;}
+a:hover{color:#fc7050;}
+#nave{z-index:8;
+	height:
+48px;
+
+
+width:100%;
+background-image:url(http://www.miui.com/static/image/miui/base/nv.png);}
+
+ul.one{width:960px;
+margin-left:auto;
+margin-right:auto;
+
+
+
+
+
+
+}
+
+ul.one li{inline-block;
+height:48px;
+list-style:none;
+font-size: 14px;
+text-decoration: none;
+color:#FFF;
+float:left;
+padding-right:16px;
+padding-left:16px;
+height:48px;
+line-height:44px;}
+li.moren{background-color:#CF4609}
+ul.one li a{color:#FFF;
+    font: 12px/1.5 Microsoft YaHei,Tahoma,Helvetica,'SimSun',sans-serif;
+height:48px;
+font-size:14px;}
+ul.one li:hover{background-color:#B43707;}
+#qmenu {
+    float: right;
+    display: inline;
+    margin: 18px 0 0;
+    padding-right: 0px;
+    width: 13px;
+    height: 12px;
+    background: url(http://static.bbs.miui.com/static/image/miui/base/imghack.png) no-repeat -58px -75px transparent;
+    line-height: 24px;
+    text-align: center;
+    color: #369;
+    font-weight: 700;
+    overflow: hidden;
+}
+.clearfloat{overflow:hidden; 
+} 
+#mainbody{
+	width:960px;;
+margin:0 auto;
+background-color:background-color:rgb(249, 249, 249);}
+.top{width:100%;
+margin-top:20px;
+}
+.top2{
+margin-top:15px;
+}
+.imgone{border-radius: 5px;
+    width: 960px;
+    height: 350px;
+}
+.imgtwo {
+    border-radius: 5px;
+    border: 1px solid #e3e3e4;
+}
+div.mainleft{width:698px;
+margin-top:20px;
+padding-top:20px;
+padding-bottom:20px;
+background-color:white;
+float:left;
+}
+div.mainfooter2{width:698px;
+margin-top:20px;
+height:116px;
+
+}
+div.mainfooter3{text-align:center;
+
+height:26px;
+position:relative;
+top:40px;
+bottom:60px;}
+div.mainfooter3 a{display:inline block;
+margin-left:4px;
+padding: 6px 10px;
+height: 26px;
+font-size:12px;
+    border: 1px solid #EBEBEB;
+    background: #FBFBFB;
+    color: #909090;
+    overflow: hidden;
+    text-decoration: none;}
+div.mainfooter3 a:hover{color:#fc7050;}
+div.main{margin-top:52px;}
+p.mainbody{font-size:14px;
+margin-left:35px;
+width:628px;
+margin-top:20px;
+color:#666666;
+line-height:22px;}
+a.mainbody{color:black;
+margin-left:35px;
+font-size:22px;
+line-height:40px}
+a.mainbody:hover{color:#fc7050;}
+img.mainbody{border-radius: 5px;
+margin-left:35px;
+margin-top:10px;
+boder:none;}
+div.mainfoot{width:628px;margin-left:35px;
+margin-top:20px;}
+
+img.mainfooter{border-radius:21px;
+line-height: 22px;
+}
+.author{color: #c5c5c5;
+font-size:12px;
+padding-bottom:8px;
+}
+.author1{color: #c5c5c5;
+font-size:12px;
+padding-bottom:8px;
+}
+.author2{display:inline-block;
+color: #c5c5c5;
+font-size:12px;
+float:right;
+}
+.author3{font-size:12px;}
+.author:hover{color:#fc7050;
+}
+
+
+
+div.mainright{float:right;
+
+	width:250px;
+margin-top:20px;
+left:1190px;
+}
+div.rightone{margin-bottom:10px;
+
+	height:45px;
+width:250px;
+background:url(http://static.bbs.miui.com/static/image/miui/base/post_btn_big.png) 0 0 no-repeat rgba(0, 0, 0, 0);
+cursor:pointer;
+}
+div.rightone:hover{background:url(../Pictures/QQ%E6%88%AA%E5%9B%BE20161020164641.png);}
+div.punch_card{;
+	padding: 15px;
+margin-bottom:10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 218px;}
+a.part:hover{background:url(../Pictures/QQ%E6%88%AA%E5%9B%BE20161021100855.png);}
+.update_version {
+    width: 218px;
+    margin-bottom: 10px;
+    color: #444444;
+    padding: 15px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background-color: white;
+}
+.update_version h2 {
+    font-size: 14px;
+    color: #666666;
+    line-height: 21px;
+    margin-bottom: 7px;
+}
+.update_version h3 a{
+    font-size: 18px;
+    color:black;
+    line-height: 27px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+.update_version h3 a:hover{color:#fc7050;}
+.update_version div a {
+    width: 107px;
+    height: 35px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 12px;
+    color: white;}
+	.version_rec {font-size:12px;
+	margin-top:20px;
+font-family: "Microsoft YaHei";
+    float: right;
+    background-color: #70c041;
+}
+a.version_rec:hover{background-color:green;}
+.download_link {margin-top:20px;
+	font-size:12px;
+font-family: "Microsoft YaHei";
+    float: right;
+    float: left;
+    background-color: #2ba9fa;
+}
+a.download_link:hover{background-color:#2B58D3;}
+.clearfix:after {
+    display: block;
+    content: " 20";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear{clear: both;
+    overflow: hidden;
+    visibility: hidden;}
+
+
+
+
+
+
+.recommend_section {
+    width: 248px;
+    margin-bottom: 10px;
+    color: #444444;
+    padding: 15px 0px 0px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    background-color: white;
+}
+.right_title {padding-left:15px;
+padding-top:10px;
+height:45px;
+line-height:55px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+	display:block;
+	border-bottom: 1px solid #ededed;
+}
+.all_section {color: #666666;
+font-family: "Microsoft YaHei";
+    font-size: 14px;
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+    display: block;
+}
+.recommend_section .lc {
+    
+    width: 123px;
+	color: #666666;
+    font-size: 14px;
+}
+.recommend_section li {
+	border-right: 1px solid #ededed;
+    float: left;
+    overflow: hidden;
+    border-bottom: 1px solid #ededed;
+    height: 43px;
+    line-height: 41px;
+    text-align: center;
+    width: 124px;
+    margin: 0;
+}
+.xl2 li {
+    float: left;
+    margin: 2px 0;
+    padding: 0;
+    width: 50%;
+    height: 1.5em;
+    overflow: hidden;
+}
+
+.xl li {
+    margin: 2px 0;
+}
+ul li, .xl li {
+    list-style: none;
+}
+a.lc{color: #666666;
+font-family: "Microsoft YaHei";
+    font-size: 14px;}
+	a.lc:hover{color:#fc7050;}
+	
+	
+div.activite{margin-bottom:10px;
+padding:15px;
+border:1px;
+border-radius:5px;
+background-color:white;}
+div.activite h2{font-size: 16px;
+    color: #444444;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;}
+div.activite a{
+font-size: 12px;
+    color: #666666;;
+    line-height: 21px;
+	font-family: "Microsoft YaHei";}
+	div.activite a:hover{color:	#fc7050;}
+	div.activite p{display:block;
+	text-align:center;}
+	
+	
+div.retie{padding:15px;
+border:1px solid #e6e6e6;
+border-radius:5px;
+background-color:white;
+margin-bottom:10px;
+width:218px;}
+div.retie h2{font-size: 16px;
+    color: #444444;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+div.retie ul{list-style:none;
+}
+div.retie ul li {margin-top:10px;}
+div.retie  li a{color: #909090;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+	margin-top:10px;
+}
+div.retie a:hover{color:#fc7050;}
+
+div.guanzhu{padding:15px;
+border:1px solid #e6e6e6;
+border-radius:5px;
+background-color:white;
+margin-bottom:10px;
+width:218px;}
+div.guanzhu h2{font-size: 16px;
+    color: #444444;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+div.guanzhu.ui{text-align:center;}
+div.guanzhu li{width:60px;
+display:inline-block;
+text-align:center;
+	border-right:1px solid  #ededed;}
+div.guanzhu li a{color: #909090;
+text-align:center;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+	margin-top:10px;
+}
+div.guanzhu a:hover{color:#fc7050;}
+
+
+
+#footer{width:100%;
+margin-top:100px;
+height:42px;
+padding:21px 0 23px;
+    border-top: 1px solid #CDCDCD;
+	background-color: #2F2F2F;
+	
+}
+div.footercenter{margin:0 auto;
+width:50%;
+}
+div.footercenter img{float:left;}
+div.footercenter span{float:right;
+
+font-family:"Microsoft YaHei";
+color: #7e7e7e;
+font-size:12px;}
+div.last{margin:0 auto;
+text-align:center;}
+div.last ul{list-style:none;}
+div.last ul li{border-right:1px solid white;
+display:inline-block;}
+div.last a{    color: #cdcdcd;
+margin-right:8px;
+text-align: center;
+    font-size: 12px;}
+	div.last a:hover{color:white;}
+	p.footertwo{color: #7e7e7e;
+	margin-left:20px;
+	margin-top:5px;
+    
+    font-size: 12px;}
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<div class="left">
+<a  href=""><img src="http://static.bbs.miui.com/static/image/miui/base/logo.png" width:"7.7%" "height:83.3%">
+</a>
+</div>
+<div class="img">
+下载APP
+</div>
+<div class="um">
+<div class="umone">
+<ul>
+<li><a class="switchwidth" title="切换到宽版" href=""></a></li>
+<li><a class="centermi" href="">MIUI官网˅</a>
+<ul>
+<li><a href="">English Forum</a></li>
+<li><a href="">小米官网</a></li>
+<li><a href="">四格报告</a></li>
+<li><a href="">积分商城</a></li>
+<li><a href="">特殊组申请</a></li>
+<li><a  class="bottom" href="">MIUI内测申请</a></li>
+</ul>
+</li>
+<li><span>|</span></li>
+<li><a href="">登入</a></li>
+</ul>
+<div class="clear">
+</div>
+</div>
+<div class="umtwo">
+<input type="text" id="scbar_txt" autocomplete="off" placeholder="搜索">
+
+</div>
+</div>
+
+</div>
+
+
+
+<div id="nave">
+
+<ul class="one">
+<li class="moren"><a href="">首页</a></li>
+<li><a href="">新帖</a></li>
+<li><a href="">版块</a></li>
+<li><a href="">MIUI专区</a></li>
+<li><a href="">资源分享</a></li>
+<li><a href="">谈天说地</a></li>
+<li><a href="">俱乐部</a></li>
+<li><a href="">极客秀</a></li>
+<li><a href="">MIUI下载</a></li>
+<li><a href="">橙色星期5</a></li>
+<li><a href="">论坛APP</a></li>
+<a  id="qmenu" href=""></a>
+</ul>
+
+
+<div class="clearfloat">
+</div>
+
+</div>
+<div class="clearfloat">
+</div>
+<div id="mainbody">
+<div class="top">
+<a href=""><img class="imgone" src="http://attach.bbs.miui.com/album/201610/14/144738uucmmf8rmd7zhx4d.png">
+</a>
+</div>
+<div class="top2">
+<a href="">
+<img class="imgtwo" src="http://attach.bbs.miui.com/album/201610/18/141321h667pgyo7j75ado7.png">
+</a>
+<a href="">
+<img class="imgtwo" src="http://attach.bbs.miui.com/album/201610/19/003556q95i9ilyx5es5gs5.png">
+</a>
+<a  href="">
+<img class="imgtwo" src="http://attach.bbs.miui.com/album/201610/19/003245oytukpuhefukbyh0.png">
+</a>
+</div>
+
+
+
+<div class="mainleft">
+<div>
+<h3>
+<a class="mainbody" href="">嗨，你掉了一张第66届世界小姐中国区总决赛的入场卷</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201610/19/144013j1i98iexrx1mis9q.jpeg"></a>
+<p class="mainbody">数月来，经过各赛区劲烈的角逐，通过层层选拔，最终42名佳丽脱颖而出，于10月8日集结北京展开为期12天的特训。10月20日，在北京太庙将为观众带来一场震撼人心的文化盛典。
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/112/54/72/93_avatar_middle.jpg?3">
+<span class="author">小米直播官</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>13946        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>35        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">惊人的纪录！小米印度市场手机销量18天破百万</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201507/14/110010zqo6k7c71oox4b2o.jpg"></a>
+<p class="mainbody">今天小米雷军发表内部邮件，庆祝小米在印度的一个新纪录，10月份仅仅用了18天就完成了手机销量过百万的好成绩！                    
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/031/04/50/89_avatar_middle.jpg?14">
+<span class="author">Just-do-It</span>
+</a>
+<span class="author1">发布于 2016-10-19 10:23</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>11494        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>301        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">79元小米移动电源2开箱图赏：握感极致</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201508/19/012631g2y1ozoo7fjk9jof.jpg"></a>
+<p class="mainbody">
+                        昨天，小米移动电源2发布，升级为锂聚合物电芯，支持双向快充，9重电路保护，更安全。                    
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/169/45/92/22_avatar_middle.jpg?5">
+<span class="author">Almeeº</span>
+</a>
+<span class="author1">发布于 2016-10-18 11:03</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>29381        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>386        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">教你在小米手机上体验微软小娜功能</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201605/05/110447aisobggoaq4maow3.jpg"></a>
+<p class="mainbody">极客发烧友最爱，体验人工智能的乐趣。                    
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/108/00/90/38_avatar_middle.jpg?">
+<span class="author">bjijj520</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>39889        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>250       <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">雷军首推小米自家处理器松果，羡煞国内厂商</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201608/16/113459q0lqhzdsy12diq5l.jpg"></a>
+<p class="mainbody"> 近年来，没有安于现状的小米不断地在科技方面创新，突破，成功地在国内继华为之后推出自家处理器松果。据传将首搭在小米5C上，做1200元到2000元试水机型，这也许是雷军带领小米科技再次起航的标志。                    
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/112/54/72/93_avatar_middle.jpg?3">
+<span class="author">bjijj520</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>44509        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>1072       <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">小米Note 2 确认于本月25日发布</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201610/17/172420otv47xxt7tyvb2tv.jpg"></a>
+<p class="mainbody">微博爆料：小米Note 2 将会采用双曲面屏幕：“一面科技，一面艺术”。发布会的海报上竟是天王级演员梁朝伟！
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/149/20/35/99_avatar_middle.jpg?4">
+<span class="author">小可柯迷</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>258470        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>5707        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">厚，是#最生活#浴巾。</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201610/17/112114gkwwh2rw12rknrry.jpg"></a>
+<p class="mainbody">笔记本越做越薄，电视越做越薄，但有些东西厚一点更好。
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/106/19/32/36_avatar_middle.jpg?2">
+<span class="author">闲蛋包包</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>13946        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>35        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">12个小设置 把手机耗电降到最小值！</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201603/31/152622ipzckvc5kk3s7dkb.jpg"></a>
+<p class="mainbody">想让爱机更持久，玩的更嗨？请跟我来吧
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/174/27/46/18_avatar_middle.jpg?5">
+<span class="author">冬日暖阳_2359</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>13946        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>35        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">米家台灯，何以智能？</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201610/17/103230fw9vdwvn0zv0qqvy.jpg"></a>
+<p class="mainbody">当大家都在说这款台灯的颜值时，我来讲讲他的智能操作。
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/099/37/17/96_avatar_middle.jpg?4">
+<span class="author">楠43</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>13946        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>35        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+
+<div class="main">
+<h3>
+<a class="mainbody" href="">小米Note 2 曝光！</a>
+</h3>
+<a href=""><img class="mainbody" width="627"src="http://attach.bbs.miui.com/album/201608/18/115220nf301u8ezvu8f81c.jpg"></a>
+<p class="mainbody">厉害了，我的米~
+</p>
+<div class="mainfoot">
+<a  href=""><img class="mainfooter" width="22" height="22" src="http://ucenter.miui.com/uc_server16/data/avatar/088/89/50/91_avatar_middle.jpg?">
+<span class="author">jiabinlln</span>
+</a>
+<span class="author1">发布于 2016-10-17 18:29</span>
+<span class="author2"><img src="../Pictures/QQ截图20161020143731.png" width="16" height="14" alt=""/>13946        <img src="../Pictures/QQ截图20161020143804.png" width="16" height="14" alt=""/>35        <img src="../Pictures/QQ截图20161020143836.png" width="16" height="14" alt=""/></span>
+</div>
+</div>
+
+<div class="mainfooter2">
+<div class="mainfooter3">
+<span class="author3">1 <a href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<a href="">6</a>
+<a href="">7</a>
+...
+<a href="">></a></span>
+</div>
+</div>
+
+</div>
+
+<div class="mainright">
+<div class="rightone">
+</div>
+<div class="punch_card">
+<div class="part part_0">
+<a class="part" href=""><img src="../Pictures/QQ截图20161024152852"></a>
+</div>
+</div>
+<div class="update_version">
+<h2>MIUI已持续更新306周</h2>
+<h3><a href="">最新版：6.10.20</a></h3>
+<div class="clearfix">
+<a href="" class="download_link">ROM下载</a>
+<a href="" class="version_rec">刷机教程</a>
+</div>
+
+
+</div>
+<div class="recommend_section">
+<h2 class="right_title">推荐版块</h2>
+<div class="clearfix">
+<div class="module c1 x1 x12">
+<ul>
+<li class="lc"><a href="" class="lc">小米5s</a></li>
+<li class="lc"><a class="lc" href="">小米5s Plus</a></li>
+<li class="lc"><a class="lc" href="">小米手机4</a></li>
+<li class="lc"><a class="lc" href="">小米笔记本</a></li>
+<li class="lc"><a class="lc" href="">小米手机5</a></li>
+<li class="lc"><a class="lc" href="">小米Max</a></li>
+<li class="lc"><a class="lc" href="">贴图自拍</a></li>
+<li class="lc"><a class="lc" href="">汉化资源</a></li>
+<li class="lc"><a class="lc" href="">新功能讨论</a></li>
+<li class="lc"><a class="lc" href="">特殊组申请</a></li>
+</ul>
+</div>
+</div>
+<a class="all_section" href="">所有版块></a>
+</div>
+
+<div class="activite">
+<div>
+<h2>热门活动</h2>
+</div>
+
+<a href=""><img src="http://attach.bbs.miui.com/album/201606/17/180042swewrpuiu9rz26b2.png"title="一起来找“8”！"></a>
+
+<p><a href="">一起来找“8”！</a></p>
+
+<a href=""><img src="http://attach.bbs.miui.com/album/201507/26/175258e6wyn1p8wu8yw61x.png"title="MIUI论坛APP体验”！"></a>
+
+<p><a href="">MIUI论坛APP体验</a></p>
+
+
+</div>
+
+<div class="retie">
+<h2>热帖排行</h2>
+<ul>
+<li><a href="">严禁无关话题灌水及相应处罚规定</a></li>
+<li><a href="">小米悄悄上线新功能 不怕网盘被关闭</a></li>
+<li><a href="">【摄影控04】一场关于小米手机的“</a></li>
+<li><a href="">Smartisan M1 官方宣传视频壁纸</a></li>
+<li><a href="">那些年梁朝伟出演的经典电影，你都</a></li>
+<li><a href="">至美壁纸 (10)————新的简约</a></li>
+<li><a href="">小米4全系 MIUI8 6.10.20 特效选择/</a></li>
+<li><a href="">华为Nova 默认壁纸————真的来了</a></li>
+<li><a href="">锁屏彰显个性（七十九）</a></li>
+<li><a href="">【MIUI转载】小米 5S 初体验：虽不</a></li>
+</ul>
+</div>
+
+<div class="guanzhu">
+<h2>关注我们</h2>
+<ul>
+
+<li><a href="">新浪微博</a></li>
+<li><a href="">社区微博</a></li>
+<li><a href="">百度贴吧</a></li>
+
+<li><a href="">QQ空间</a></li>
+<li><a href="">百度搜索</a></li>
+<li><a href="">微信</a></li>
+
+<li><a href="">Facebook</a></li>
+<li><a href="">twitter</a></li>
+<li><a href="">Google+</a></li>
+
+</ul>
+
+</div>
+</div>
+</div>
+
+<div class="clear">
+</div>
+
+<div id="footer">
+<div class="footercenter">
+<img src="http://static.bbs.miui.com/static/image/miui/base/footer_title.png">
+<span>Copyright © 2016 MIUI</span>
+<div class="last">
+<ul>
+<li><a href="">MIUI官方网站</a></li>
+<li><a href="">小米旗下网站</a></li>
+<li><a href="">加入小米</a></li>
+<li><a href="">免责声明</a></li>
+<li><a href="">手机版</a></li>
+</br>
+<p class="footertwo">京ICP备10046444号 | 京公网安备11010802020134号 | 京ICP证110507号</p>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<style>
+*{
+	font-family: "微软雅黑";
+}
+legend{
+	color:red;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.zifu{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color:#00ab88;
+	border: 1px solid #00ab88;
+	background: white;
+}
+.QR{
+	background: #38f;
+	font-size: 16px;
+	height: 25px;
+	line-height: 25px;
+	width:200px;
+	text-align: center;
+	border: 1px solid #ccc;
+	color:white;
+	border-radius: 5px;
+	cursor: default;
+	box-shadow: 3px 3px 4px #ccc;
+}
+#pic{
+	padding: 10px;
+	border:1px solid #38f;
+	display: inline-block;
+	box-shadow: 3px 3px 10px 1px ;
+	border-radius: 5px;
+	background: white;
+	color:#38f;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	cursor: default;
+}
+ul li{
+	padding: 5px;
+}
+#li{
+	display: none;
+}
+.bg{
+	background: green;
+	display: inline-block;
+	color:white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 6px 1px;
+}
+button{
+	display: inline-block;
+	width:75px;
+	background: url(1.jpg) no-repeat;
+	height:25px;
+	line-height: 20px;
+	color:white;
+	margin-left:-1px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+fieldset{
+	width:450px;
+	background: url(v7.jpg) top center;
+	box-shadow: 2px 2px 6px 1px #38f;
+}
+</style>
+<body>
+<fieldset>
+	<legend>My First Javascript</legend>
+	<p class="zifu"><span id="demo">wealllovencuhome2001-2016ncuhome</span></p>
+	<button type="button" onclick="seventh()">第七个字</button>
+	<button type="button" onclick="length()">字符长度</button>
+	<button type="button" onclick="change()">第11个字</button>
+	<button type="button" onclick="adders()">加ers</button>
+
+	<p class="QR" onmouseover="mouseOver()" onmouseout="mouseOut()">鼠标移到此处显示二维码</p>
+	<div id="pic" style="display:none";>
+		<img  src="app_码.png" width="120" height="120">
+		<p>搞了半天终于出来了T_T</p>
+	</div>
+	<p style="color:white"><b>相关单位:</b></p>
+	<div class="bg">
+		<ul>
+			<li>谷歌搜索</li>
+			<li onclick="turnred()">雅虎新闻</li>
+			<li>百度百科</li>
+			<li>新浪微博</li>
+			<li id="li_5">淘宝购物</li>
+		</ul>
+		<ul id="li">
+			<li>搜狗拼音</li>
+			<li>金山毒霸</li>
+			<li>腾讯游戏</li>
+			<li>有道翻译</li>
+			<li>云家园网</li>
+		</ul>
+	</div>
+	<button type="button" onclick="setmore()" class="more">显示更多</button>
+</fieldset>
+
+<script>
+ var x = document.getElementById('demo').innerHTML;
+function seventh()
+{
+  alert(`${x[6]}`);
+}
+function length()
+{
+  alert(`${x.length}`)
+}
+function change()
+{
+  document.getElementById('demo').innerHTML="wealllovenauhome2001-2016ncuhome";
+}
+function adders()
+{
+	x = x+"ers";
+	document.getElementById('demo').innerHTML = x;
+}
+function mouseOver()
+{
+	document.getElementById('pic').style.display="inline-block";
+}
+function mouseOut()
+{
+	document.getElementById('pic').style.display="none";
+}
+function setmore()
+{
+	document.getElementById("li").style.display="block";
+}
+function turnred()
+{
+	document.getElementById("li_5").style.color="red";
+}
+var today = new Date();
+var y = today.getHours();
+if(y>=0&&y<=6)
+{
+	alert('大佬快睡觉,身体最重要')
+}
+ else if(y>6&&y<9)
+{
+	alert('大佬，Good morning~')
+}
+ else if(y>=9&&y<12)
+{
+	alert('大佬，上午好~')
+}
+else if(y>=12&&y<14)
+{
+	alert('次饭时间到~')
+}
+else if(y>=14&&y<18)
+{
+	setTimeout("alert('下午好~')",5000);
+}
+else
+{
+	alert('晚上好！')
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+  #demo{color:blue;
+  text-align:center;
+font-size:100px;}
+button{height:50px;
+width:100px;
+border-color:green;
+text-align: center;
+line-height:50px;
+font-size:13px;
+margin:0 auto;}
+.main{text-align:center;
+  margin-bottom:50px;
+}
+#ulone{position:absolute;
+top:100px;
+left:0px;}
+#right {position:absolute;
+top:0px;
+right:0px;}
+#right li{
+  display:block;
+height:30px;
+width:100px;
+
+text-align: center;
+background-color:green;
+}
+#right li ul {position:absolute;
+right:0px;}
+#right li ul li{display:block;
+height:30px;
+width:100px;
+text-align: center;}
+
+
+</style>
+</head>
+<body>
+<h1 id="demo"></h1>
+<div class="main">
+  <p id="hanyu">wealllovencuhome2001-2016ncuhome </p>
+<button id="clickone" onclick=alert(txt.length)>showlength</button>
+<button id="clicktwo" onclick=alert(txt.match("o"))>show the 7</button>
+<button id="clickthree" onclick="hanxuan()">replace"a"</button>
+<button id="clickfour" onclick="han()">add"ers"</button>
+</div>
+<div>
+  <ul id="ulone">
+    <li><strong>please click the blank underthere</li>
+    <li><img border="0" alt="move there"
+      src="" name="b1"
+       onmouseover="mouseOver()" onmouseout="mouseOut()" />
+</li>
+</ul>
+  <ul id="right" >
+ <li>First</li>
+  <li id="two" onmousedown="style.background='red'" onmouseup="style.background='green'">Second</li>
+   <li>Three</li>
+    <li>Four</li>
+     <li id="five">Five</li>
+
+       <li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+         morebutton
+         <ul>
+        <li>Seven</li>
+         <li>Eight</li>
+          <li>Nine</li>
+           <li>Ten</li>
+         </ul>
+      </li>
+
+
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+<script>
+var txt="wealllovencuhome2001-2016ncuhome";
+var x="";
+var time=new Date().getHours();
+
+
+
+function displaySubMenu(li) {
+
+            var subMenu = li.getElementsByTagName("ul")[0];
+
+            subMenu.style.display = "block";
+
+        }
+
+        function hideSubMenu(li) {
+
+            var subMenu = li.getElementsByTagName("ul")[0];
+
+            subMenu.style.display = "none";
+
+        }
+
+setTimeout(function(){
+if (time<12)
+  {
+  x="Good morning";
+  }
+
+else if (time<18)
+  {
+  x="Good afternoon";
+  }
+else
+  {
+ x="Good evening";
+  }
+document.getElementById("demo").innerHTML=x;
+} , 1000);
+
+
+function mouseOver()
+{
+document.b1.src ="http://s1.bbs.xiaomi.cn/statics/images/header_qr.png"
+}
+function mouseOut()
+{
+document.b1.src =""
+}
+
+
+function hanxuan()
+{
+  y=document.getElementById("hanyu");
+y.innerHTML="wealllovenauhome2001-2016ncuhome";
+}
+function han()
+{
+  y=document.getElementById("hanyu");
+y.innerHTML="wealllovencuhome2001-2016ncuhomeers";
+}
+
+
+</script>
+
+</body>
+</html>

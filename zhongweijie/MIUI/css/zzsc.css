@@ -1,0 +1,99 @@
+
+nav  nav{background:#A4CA39;
+position:relative;}
+.android{
+	height: 100px; width: 80px;
+	position:fixed;
+	bottom:0px;
+	left:50px;
+	
+	
+}
+.head{
+	width: 50px; height: 25px;
+	
+	
+	border-radius: 25px 25px 0 0;
+	-moz-border-radius: 25px 25px 0 0;
+	-webkit-border-radius: 25px 25px 0 0;
+	
+	-webkit-transition: all 0.1s ease-in;
+}
+.l_eye, .r_eye {
+	background: #fff;
+	width: 5px; height: 5px;
+	position: absolute; top: 10px;
+	
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.l_eye {left: 12px;}
+.r_eye {right: 12px;}
+
+.l_ant, .r_ant{
+	width: 1.5px; height: 12px;
+	position: absolute; top: -9px;
+	
+	border-radius: 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+}
+.l_ant {
+	left: 12px;
+	transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+}
+.r_ant {
+	right: 12px;
+	transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	-moz-transform: rotate(8deg);
+}
+
+.body{
+	width: 50px; height: 45px;
+	top: 4px;
+	
+	border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+}
+
+.l_arm, .r_arm, .l_leg, .r_leg {
+	width: 12px; position: absolute;
+	-webkit-transition: all 0.1s ease-in;
+}
+.l_arm, .r_arm {
+	height: 36px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.l_leg, .r_leg {
+	height: 20px; top: 45px;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+.l_arm {left: -15px;}
+.r_arm {right: -15px;}
+.l_leg {left: 11px;}
+.r_leg {right: 11px;}
+
+.head:hover {
+	-webkit-transform: rotate(-6deg) translate(-1px, -2px);
+	-transform: rotate(-6deg) translate(-1px, -2px);
+	-moz-transform: rotate(-6deg) translate(-1px, -2px);
+}
+.l_arm:hover{
+	-webkit-transform: rotate(7deg) translate(-7px, 0);
+	-transform: rotate(7deg) translate(-7px, 0);
+	-moz-transform: rotate(7deg) translate(-7px, 0);
+}
+.r_arm:hover{
+	-webkit-transform: rotate(-7deg) translate(7px, 0);
+	-transform: rotate(-7deg) translate(7px, 0);
+	-moz-transform: rotate(-7deg) translate(7px, 0);
+}

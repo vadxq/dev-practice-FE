@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="https://www.baidu.com/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="bootstrap\css\font-awesome.min.css">
+	<title>百度一下，你就知道</title>
+
+
+<style>
+*{
+	font-size:13px;
+	margin: 0;
+}
+html{
+	height: 100%; 
+	margin: 0; 
+	padding: 0; 
+	position: relative;
+	min-width: 810px;
+	min-height: 650px;
+	overflow-x:hidden;
+}
+.ul{
+	margin:0px;
+	padding: 0px;
+	margin-top:20px;
+}
+.ul li{
+	display: inline;
+	list-style: none;
+	margin:0px 6px;
+	padding-bottom: 10px;;
+	;
+}
+.ul a{
+	color:black;
+	
+}
+
+#more{
+	
+	width: 62px;
+	font-size:13px;
+	border: none;
+	background-color: #0080FF;
+	position: relative;
+	padding:4px;
+	text-decoration: none;
+	color:white; 
+	margin-right: -10px;
+	margin-left: 5px;
+}
+.lg{
+	margin-top:9%;
+	}
+
+
+
+.form {
+	width: 660px;
+	margin: 20px auto;
+	height: 40px;
+	line-height: 30px;
+	
+ }
+ .form button:hover{
+ 	background-color: #4169FF;
+ }
+ .form button:active{
+ 	background-color: #4169E1; 
+ }
+
+.search {
+	width: 550px;
+	height: 30px;
+	text-indent: 0.5em;
+	font-size:18px;
+	outline-color: #1E90FF;
+ }
+ 
+.submit {
+	margin-left:-8px;
+	width: 100px;
+	height: 36px;
+	border: 0px solid #ccc;
+	background-color:#1E90FF;
+	color:white;
+    font-size: 15px;
+    outline:medium;
+    cursor: pointer;
+    }
+
+.tu{
+	display: inline;
+	margin: 0 auto;
+}
+
+
+.tu img{
+	width:64px;
+	height: 64px;
+	display: inline;
+	
+}
+.table{
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right:15px;;
+	
+}
+.table td{
+	
+	line-height:20px; ;
+}
+
+
+
+#pic{
+	position: absolute;
+	bottom: 0px;
+	height:130px;
+	width:100%;
+	
+
+}
+
+.word{
+	
+	text-align: left;
+}
+
+.word li{
+	list-style: none;
+	margin-bottom: 8px;
+	margin-left: -20px;
+	font-size:12px;
+	;
+}
+
+a{
+	color:#A9A9A9;
+	font-family: "微软雅黑";
+}
+
+#ul2 button{
+	
+	background-color: #FFF;
+	height: 25px;;
+	width:70px;
+	
+	;
+}
+#ul2{
+	position: absolute;
+	right:-18px;
+	width:80px;
+	top:22px;	
+}
+#ul2 a{
+	width:70px;
+	height:25px;
+
+}
+#ul2 li{
+	list-style: none;
+}
+#sssz{
+	border-bottom: none;
+	
+		}
+#ul2 button:hover{
+	color:white;
+	background-color: #1E90FF;
+	
+}
+#ul2 a{
+	text-decoration: none;
+}
+
+#gjss{
+	border-top:none;;
+	border-bottom: none;
+}
+
+#gbyc{
+	border-top: none;
+	border-bottom: none;
+}
+#ssls{
+	border-top:none;
+}
+
+.settings{
+	position: relative;
+}
+
+#ul3{
+	width:80px;
+	position: absolute;
+	right:0px;
+	top:-20px;
+	padding: 0px;
+	height:100%;
+	padding-top: 10px;
+	border-left: 1px solid #F5F5F5;
+	background-color:#FFFAFA;
+		
+}
+#ul3 li{
+	display: inline-block;
+	height: 60px;
+	width:60px;
+	text-align: center;
+	margin-bottom: 25px;;
+	margin-left:9px;
+	border-bottom: 1px solid #DCDCDC;
+	;
+	
+}
+#ul3 li img{
+	margin-left:-3px;
+	
+}
+#ul3 li p{
+	margin:0px 0px;
+	font-size: 14px;
+	
+}
+
+#ul3 li a{
+	text-decoration: none;
+}
+#ul3 li a:hover{
+	text-decoration: underline;
+}
+
+.music img{
+	width:48px;
+}
+.music{
+	border-top: 1px solid  #DCDCDC;
+	padding-top:20px;
+	}
+	
+
+#gengduo{
+	margin-bottom: 14px;;
+	margin-top:34px;
+	width:68px;;
+	margin-right: 5px;
+	border: none;
+	background-color:#FFFAFA;
+}
+.came{
+	display: inline-block;
+	position: relative;
+}
+.came a:hover{
+	color:#1E90FF;
+}
+.camera{
+
+	font-size: 18px;
+	position: absolute;
+	bottom:-5px;
+	left:-136px;
+	z-index: 555;
+}
+</style>
+
+<script src="jQuery\jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+	 $(".settings").mouseover(function(){
+		 $("#ul2").show();
+		 
+		console.log("a")
+		 })
+	 $(".settings").mouseout(function(){
+		 
+		 $("#ul2").hide();
+		 
+		 })
+	  $(".gengduo").mouseover(function(){
+		 $("#ul3").show();
+		 
+		console.log("a")
+		 })
+	 $(".gengduo").mouseout(function(){
+		 
+		 $("#ul3").hide();
+		 
+		 })
+	 $(".login").click(function ale() {  
+       
+        alert("由摄像头看到你是在太丑了，禁止登录！"); 
+        
+  
+    })  
+	  })
+  </script>
+</head>
+<body sroll="auto">
+	<div class="ul" align="right">
+		<ul>
+			<li><a href="https://www.nuomi.com/?cid=002540"><b>糯米</b></a></li>
+			<li><a href="http://news.baidu.com/"><b>新闻</b></a></li>
+			<li><a href="https://www.hao123.com/"><b>hao123</b></a></li>
+			<li><a href="https://map.baidu.com"><b>地图</b></a></li>
+			<li><a href="https://v.baidu.com"><b>视频</b></a></li>
+			<li><a href="https://tieba.baidu.com"><b>贴吧</b></a></li>
+			<li><a href="#" class="login">登录</a></li>
+			<li class="settings"><a href="#">设置</a>
+				<ul id="ul2" style="display: none;">
+					<li><button id="sssz"  style="cursor:pointer">搜索设置</button></li>
+					<li><button id="gjss"  style="cursor:pointer">高级搜索</button></li>
+					<li><button id="gbyc"  style="cursor:pointer">关闭预测</button></li>
+					<li><button id="ssls"  style="cursor:pointer">搜索历史</button></li>
+				</ul>
+			</li>
+			<li class="gengduo"><button id="more">更多产品</button>
+				<ul id="ul3" style="display: none;">
+					<button id="gengduo">更多产品</button>
+					<li class="music"><a href="#"><img src="pic\音乐.png"><p>音乐</p></a></li>
+					<li><a href="#"><img src="pic\图片.png"><p>图片</p></a></li>
+					<li><a href="#"><img src="pic\知道.png"><p>知道</p></a></li>
+					<li><a href="#"><img src="pic\文库.png"><p>文库</p></a></li>
+					<li><a href="#"><img src="pic\风云榜.png"><p>风云榜</p></a></li>
+					<a href="#" style="font-size:8px;" class="all">全部产品>></a>
+				</ul>
+			</li>
+		</ul>
+	</div>
+    <!-- 右上角任务栏 -->
+    <div id="main">
+	<div class="lg" align="center">
+		<img src="pic\baidu.png" width="270" height="129" >
+	
+	</div>
+	<div class="form">
+		
+		<input class="search" type="text" />
+	
+		<button class="submit" >
+							百度一下</button>
+		<div class="came">
+			<a href="#"><i class="fa fa-camera camera" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</div>	
+	<div id="pic" align="center">
+		<div class="icon" >
+			<div class="tu">
+				<img src="pic\1.png" >
+				<table class="table">
+					<tr>
+					<td><strong>手机百度</strong></td>
+					</tr>
+					<tr>
+						<td style="color:#A9A9A9">快人一步</td>
+					</tr>
+				</table>
+				
+		
+			
+				<img src="pic\1.png">
+				<table class="table">
+					<tr>
+					<td><strong>百度糯米</strong></td>
+					</tr>
+					<tr>
+						<td style="color:#A9A9A9">一元大餐</td>
+					</tr>
+				</table>
+				<ul class="table word" style="color:#A9A9A9">
+					<li><a href="https://www.baidu.com/cache/sethelp/help.html"target="_blank">把百度设为主页</a>&nbsp;
+						<a href="http://home.baidu.com/">关于百度</a>&nbsp;
+						<a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>&nbsp;
+						<a href="http://e.baidu.com/?refer=888&subsite=jx">百度推广</a></li>
+					<li>©2016 Baidu <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+						<a href="https://jianyi.baidu.com"target="_blank">意见反馈</a> 京ICP证030173号 </li>
+					<li><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001"
+						target="_blank">京公网安备11000002000001号</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
