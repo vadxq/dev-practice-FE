@@ -274,8 +274,11 @@
 			font-family: 'opensans'; 
 			font-style: italic;
 		}
-		#con3,#con4 {
+		#con3 {
 			margin-top: 20px;
+		}
+		#con4 {
+			margin-top: 10px;
 		}
 		#con5 {
 			margin-top: 10px;
@@ -350,23 +353,12 @@
 		.video {
 			width:770px;
 			height: 460px;
-		}
-		.video video {
-			width:770px;
-			height: 460px;
+			border:1px solid #000;
 		}
 		.audio {
 			width: 770px;
-			height: 80px;
-			box-shadow: 0px 1px 4px 1px #b1b1b1;
-			text-align: center;
-			line-height: 100px;
-			background: #fff;
-			border-radius: 5px;
-		}
-		.audio audio {
-			width: 710px;
-			background: gray;
+			height: 90px;
+			border:1px solid #000;
 		}
 		/*siderbar样式*/
 		.sidebar {
@@ -555,7 +547,7 @@
 			float: left;
 		}
 		.footleft h3 {
-			padding-top: 65px;
+			padding-top: 78px;
 		}
 		.footleft p {
 			margin-top:25px;
@@ -577,7 +569,7 @@
 			margin-left: 30px;
 		}
 		.footleft1 h3, .footright h3 {
-			padding-top: 78px;
+			padding-top: 88px;
 			font-size: 20px;
 			color: #3f6a66;
 			font-family: 'opensans-bold';
@@ -609,7 +601,7 @@
 			margin-left: 75px;
 		}
 		.footright1 h3 {
-			padding-top: 78px;
+			padding-top: 88px;
 			font-size: 20px;
 			color: #fff;
 			font-family: 'opensans';
