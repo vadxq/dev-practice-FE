@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>留言板</title>
+	<style type="text/css">
+		li span {
+			margin-left: 20px;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+	window.onload = function(){
+		var comment = document.getElementsByTagName('input')[1];
+		var oldNode = document.createElement('ul');
+		comment.onclick = function ( ) {
+			var x = document.getElementById('con');
+			var y = document.getElementsByName('con')[0].value;
+			var newNode = document.createElement('li');
+			var nodeLists = oldNode.getElementsByTagName('li');
+			x.parentNode.appendChild(oldNode);
+			newNode.innerHTML = y +"<span>删除</span>";
+			if (nodeLists.length>0) {
+				oldNode.insertBefore(newNode,nodeLists[0]);
+			} else {
+				oldNode.appendChild(newNode);
+			}
+			x.value="";
+			var deleteSpan = document.getElementsByTagName('span');
+			for (var i = 0 ;i < deleteSpan.length; i++){
+				deleteSpan[i].onclick = function ( ) {
+					oldNode.removeChild(this.parentNode);
+				}
+			}
+		}
+		
+	}
+	</script>
+</head>
+<body>
+	<h3>留言板</h3>
+	<input type="text" id="con" name="con" value="" size="40"/>
+	<input type="button" value="留言"/>
+</body>
+</html>
