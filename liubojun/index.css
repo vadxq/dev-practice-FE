@@ -261,22 +261,16 @@
 			border-radius: 5px;
 		}
 		.py_lunbo_container {
-			width:9600px;
+			width:5760px;
 			height: 350px;
-			top:0;
-			z-index: 8;
+			position: absolute;
 		}
-		.py_lunbo_container a {
-			display: block;
-			width: 960px;
-			height: 350px;
-			margin: 0;
-		}
-		.py_lunbo_container:hover div {
+		.py_lunbo:hover .prev, .py_lunbo:hover .next{
 			display: block;
 		}
 		.py_lunbo_container a img {
 			border-radius: 5px;
+			float: left;
 			width: 960px;
 			height: 350px;
 		}
@@ -287,9 +281,8 @@
 			position: absolute;
 			width: 22px;
 			height: 41px;
-			top:158px;
+			top:150px;
 			cursor: pointer;
-			z-index: 99;
 			display: none;
 			background: url(pic/geek_4.png) no-repeat;
 		}

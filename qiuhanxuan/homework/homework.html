@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+*{margin:0;
+padding:0;
+font-family: 'Open Sans', sans-serif;}
+body{background-color:rgb(243,243,243);}
+a{text-decoration: none;}
+.clearfloat{clear:both;
+   height:0px;
+   margin:0;
+   padding:0;
+   width:0;
+   border:none;
+    overflow:hidden;
+}
+#header{height:80px;
+  padding-left:173px;
+  padding-right:172px;
+background-color:rgb(118,199,192);
+
+}
+ul{list-style-type: none;
+}
+ul.one{float:left;
+line-height:80px;
+}
+ul.one li.big a{font-size:30px;
+  font-weight: bold;
+color:#ffffff;
+}
+ul.one li a{margin-right:4px;
+  font-size:25px;
+color:#ffffff;}
+ul.two{float:right;
+text-align:center;
+display:block;
+
+margin-top:25px;
+
+}
+ul.two li{height:30px;
+
+
+
+text-align:center;
+}
+
+ul.two li a{color:#ffffff;
+display:block;
+height:30px;
+
+
+
+line-height:30px;
+height:30px;
+font-size:13px;}
+ul.two li a:hover{background-color:rgb(98,162,158);
+  
+  
+  border-radius:5px;
+  height:30px;
+  
+ 
+ }
+
+ a.first{
+  margin-right:43px;
+}
+ a.second{
+  margin-right:48px;
+}
+ a.three{
+  margin-right:43px;
+}
+ a.four{
+  margin-right:29px;
+}
+
+ a.five{background-color:rgb(98,162,158);
+   text-align: center;
+   line-height:30px;
+   z-index:2;
+   
+   border-radius:5px;
+   height:30px;
+   width:80px;
+   
+  margin-right:33px;
+}
+ a.six{
+  margin-right:53px;
+}
+ a.seven{
+  margin-right:50px;
+}
+ a.eight{margin-top:7px;
+ float:right;
+  
+}
+
+
+ul li{display:inline-block;}
+ul li:hover ul{display:block;}
+ul li ul {position: absolute;
+  display:none;
+}
+ul li ul li{display:block;
+text-align:center;
+  border-radius:5px;
+  height:30px;
+  width:80px;}
+  ul li ul li a{display:block;
+  color:red;
+  width:75px;
+  }
+  
+  
+
+/*第2部分*/
+
+  #hanxuan{height:80px;
+margin-top:-5px;
+    background-color: rgb(236,236,236);
+  padding-left:173px;
+padding-right:168px;}
+.size1{font-size: 20px;
+color:#7f8c8c;
+margin-top:-5px;
+font-weight:bold;
+margin-left:0px;
+display: inline-block;
+line-height: 80px;
+}
+.size2{font-size:12px;
+  line-height: 80px;
+  margin-top:-5px;
+  float:right;
+  display: inline-block;
+color:#7f8c8c}
+
+/*第3部分*/
+#mainbody{padding-left:168px;
+}
+.mainbodyleft{float:left;
+}
+.mainbodyright{float:right;
+margin-top:100px;
+}
+.mainbodyright1{}
+.size10{font-size:14px;
+margin-left:16px;
+display:block;
+color:#e2534b;
+font-family:'Open Sans', sans-serif;
+font-weight:bold;
+margin-bottom:10px;}
+h8{font-size:16px;
+display:block;
+color:#7f8c8c;
+font-family:'Open Sans', sans-serif;
+font-weight:bold;
+margin-bottom:20px;}
+img.duiqi{display:inline;
+margin-right:15px;
+line-height:14px;}
+.mainbodyright2{margin-top:50px;}
+span.rightsize1{display:inline-block;
+margin-left:10px;
+font-family:'Open Sans', sans-serif;}
+span.rightsize2{display:block;
+width:249px;
+padding-left:21px;
+padding-bottom:10px;
+font-size:12px;
+color:#7f8c8c;
+border-bottom:1px solid rgb(229,230,230);
+font-family:'Open Sans', sans-serif;}
+span.rightsize3{margin-left:20px;
+display:block;}
+
+.mainbodyright3{margin-top:70px;}
+a.tags{display:inline-block;
+margin-top:10px;
+margin-right:5px;
+border-radius:5px;
+height:25px;
+padding-left:10px;
+padding-right:10px;
+background:#7f8c8c;
+font-size:14px;
+color:#ffffff;
+cursor:pointer;
+line-height:25px;}
+a.tags:hover{background:#e2534b;}
+.mainbodyright4{MARGIN-TOP:50px;}
+
+.mainbody1{background-color: rgb(243,243,243);
+  
+  margin-top:100px; 
+}
+.yema1{height:60px;
+border-radius:5px;
+padding:10px;
+width:50px;
+text-align:center;
+background-color:#ffffff;}
+.yema2{margin-top:20px;
+border-radius:5px;
+	padding:20px;
+	height:30px;
+width:30px;
+text-align:center;
+background-color:#7f8c8c;
+}
+.size3{font-size:20px;
+font-family: 'Open Sans', sans-serif;
+color:#7f8c8c;}
+.size4{font-size:30px;
+font-family: 'Open Sans', sans-serif;
+color:#7f8c8c;
+font-weight:blod;}
+.mainleft{float:left;
+padding-right:40px;
+}
+.center{float:left;
+
+border-radius:5px;}
+h4{font-size:24px;
+margin-top:25px;
+color:#76c7c0;
+font-family:'Open Sans', sans-serif;
+}
+p{color:#7f8c8c;
+font-size:14px;
+font-family:'Open Sans', sans-serif}
+p a{color:#e2534b;
+font-size:14px;
+font-family:'Open Sans', sans-serif}
+.p1{margin-top:20px;}
+.p2{margin-top:25px;}
+.p3{margin-top:25px;}
+a.red{color:#e2534b;}
+
+
+/*第页码部分*/
+
+   ul.blue{float:none;
+   margin-bottom:100px;
+  margin-top:100px;
+  margin-left:168px;
+ }
+ ul.blue li{float:none;
+  
+  
+  text-align:center;
+
+  }
+ ul.blue li a{display:block;
+  margin-left:5px;
+  font-weight:bold;
+	  height:40px;
+	  border-radius:5px;
+  width:40px;
+  font-size:14px;
+  color:#ffffff;
+  font-family:'Open Sans', sans-serif;
+  text-align:center;
+  line-height:40px;
+  background-color:rgb(140,152,152);
+  }
+ ul.blue li a:hover{background-color:rgb(229,101,93);
+  height:40px;
+  width:40px;}
+  a.teshu1{margin-right:20px;}
+
+  a.teshu3{margin-right:-20px;}
+
+  
+  /*第末尾部分*/
+  #footer1{height:350px;
+  background:rgb(118,199,192);
+  padding-left:168px;
+  
+  }
+  h5{font-size:30px;
+  font-weight: bold;
+color:#ffffff;
+  }
+  .size5{color:#ffffff;
+  font-size:13px;
+  margin-top:30px;
+  line-height:30px;
+  font-family:'Open Sans', sans-serif;
+ }
+  span.big{font-size:20px;
+  color:#ffffff;
+  margin-left:20px;
+  }
+  .footers1{float:left;
+  margin-top:50px;}
+  .footers2{float:left;
+  
+  margin-left:40px;
+   margin-top:60px;}
+  h6{font-size:20px;
+  margin-bottom:40px;
+  color:rgb(73,126,121);}
+  a.size6{font-size:13px;
+  margin-left:22px;
+  margin-bottom:10px;
+  display:block;
+  color:#ffffff;
+  font-family:'Open Sans', sans-serif;}
+  .footers3{float:left;
+  margin-top:60px;
+  margin-left:110px;}
+  .footers4{float:left;
+  margin-top:60px;
+  margin-left:110px;}
+  p.size7{font-size:13
+  }
+  h7{font-size:20px;
+  color:#ffffff;
+  font-family:'Open Sans', sans-serif;}
+.footers5{margin-top:40px;}
+.footers6{margin-top:20px;}
+.hanxuan2{float:left;}
+ .imgleft{float:left;}
+ p.size7{margin-left:20px;
+ margin-top:-5px;
+
+ font-size:13px;
+ color:#ffffff;
+ font-family:'Open Sans', sans-serif;
+ line-height:20px;}
+ p.size8{font-size:13px;
+margin-left:20px;
+ font-family:'Open Sans', sans-serif;
+ line-height:30px;
+ color:rbg(118,199,192);}
+ 
+  
+  
+  #footer2{height:50px;
+  background:rgb(106,172,172);
+  padding-left:168px;
+  padding-right:168px;
+  }
+  .size9{color:#ffffff;
+  font-size:12px;
+  line-height:50px;
+  font-family:'Open Sans', sans-serif;}
+  .imgright{float:right;
+  margin-right:25px;
+  }
+  audio{
+height:300px;
+width:600px;
+}
+
+/*图片转换部分*/
+ #container { width: 770px; height: 300px;  overflow: hidden; position: relative;}
+        #list { width: 5390px; height: 300px; position: absolute; z-index: 1;}
+        #list img { float: left;
+		width:770px;
+		height:300px;}
+        #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 340px;}
+        #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+        #buttons .on {  background: orangered;}
+        .arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 130px; background-color: RGBA(0,0,0,.3); color: #fff;}
+        .arrow:hover { background-color: RGBA(0,0,0,.7);}
+        #container:hover .arrow { display: block;}
+        #prev { left: 5px;
+		height:57px;
+		line-height:57px;
+		background:rgb(232,100,90);
+		color:#ffffff;
+		width:50px;
+		border-radius:5px;
+		}
+        #next { right: 5px;
+		line-height:57px;
+		background:rgb(232,100,90);
+		color:#ffffff;
+		width:50px;
+		height:57px;
+		border-radius:5px;}
+
+  
+  
+	
+  
+  
+  
+  
+  
+  
+
+
+</style>
+
+<script type="text/javascript">
+
+        window.onload = function () {
+            var container = document.getElementById('container');
+            var list = document.getElementById('list');
+            var buttons = document.getElementById('buttons').getElementsByTagName('span');
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var index = 1;
+            var len = 5;
+            var animated = false;
+            var interval = 30000;
+            var timer;
+
+
+            function animate (offset) {
+                if (offset == 0) {
+                    return;
+                }
+                animated = true;
+                var time = 300;
+                var inteval = 10;
+                var speed = offset/(time/inteval);
+                var left = parseInt(list.style.left) + offset;
+
+                var go = function (){
+                    if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                        list.style.left = parseInt(list.style.left) + speed + 'px';
+                        setTimeout(go, inteval);
+                    }
+                    else {
+                        list.style.left = left + 'px';
+                        if(left>0){
+                            list.style.left = -770 * len + 'px';
+                        }
+                        if(left<(-770 * len)) {
+                            list.style.left = '-600px';
+                        }
+                        animated = false;
+                    }
+                }
+                go();
+            }
+
+            function showButton() {
+                for (var i = 0; i < buttons.length ; i++) {
+                    if( buttons[i].className == 'on'){
+                        buttons[i].className = '';
+                        break;
+                    }
+                }
+                buttons[index - 1].className = 'on';
+            }
+
+            function play() {
+                timer = setTimeout(function () {
+                    next.onclick();
+                    play();
+                }, interval);
+            }
+            function stop() {
+                clearTimeout(timer);
+            }
+
+            next.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == 5) {
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                animate(-770);
+                showButton();
+            }
+            prev.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == 1) {
+                    index = 5;
+                }
+                else {
+                    index -= 1;
+                }
+                animate(770);
+                showButton();
+            }
+
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function () {
+                    if (animated) {
+                        return;
+                    }
+                    if(this.className == 'on') {
+                        return;
+                    }
+                    var myIndex = parseInt(this.getAttribute('index'));
+                    var offset = -770 * (myIndex - index);
+
+                    animate(offset);
+                    index = myIndex;
+                    showButton();
+                }
+            }
+
+            container.onmouseover = stop;
+            container.onmouseout = play;
+
+            play();
+
+        }
+    </script>
+
+
+
+</head>
+<body>
+<div id="header">
+  <ul class="one">
+    <li class="big"><a href="">MODUS</a></li>
+    <li><a href="">versus</a></li>
+  </ul>
+  <ul class="two">
+    <li><a class="first" href="">HOME</a></li>
+    <li><a class="second"href="">ABOUT</a></li>
+    <li><a class="three"href="">SERVICES</a>  </li>
+    <li class="teshu"><a class="four" href="">˅PORTFOLIO</a>
+      <ul >
+   <li class="teshu"><a class="four" href="">˅PORTFOLIO</a></li>
+   <li class="teshu"><a class="four" href="">˅PORTFOLIO</a></li>
+   <li class="teshu"><a class="four" href="">˅PORTFOLIO</a></li>
+   <li class="teshu"><a class="four" href="">˅PORTFOLIO</a></li>
+    
+      </ul>
+    </li>
+    <li class="hover"><a class="five"href="">BLOG</a></li>
+    <li><a class="six"href="">FEATURES</a></li>
+    <li><a class="seven" href="">CONTACTS</a></li>
+    <a class="eight"href="">
+      <img src="img/QQ截图20161114182223.png"></a>
+
+  </ul>
+
+
+</div>
+
+<!-- 第2部分 -->
+
+<div id="hanxuan">
+<div class="clearfloat">
+  </div>
+<a href="" class="size1">BLOG</a>
+  <a href="" class="size2">Home &nbsp;&nbsp;/&nbsp;&nbsp; Blog</a>
+</div>
+<!--第3部分  -->
+
+
+  <div id="mainbody">
+  <div class="mainbodyleft">
+  <div class="mainbody1">
+  <div class="mainleft">
+  <ul>
+  <div class="yema1">
+    <li>
+    <p>
+    <a class="size3" href="">MAY</a>
+    </p>
+    <p>
+    <a class="size4" href="">26</a>
+    </p>
+    </li>
+    </div>
+    <div class="yema2">
+    <li><a href=""><img src="img/QQ截图20161111184815.png"></a>
+    </li>
+    </div>
+    </ul>
+    
+  </div>
+  
+   <div class="center">
+  
+    <img src="img/0c7b1d6bce688a85fb641eced28b786d.jpeg" width="770" height="300">
+    <h4>Duis daapobus aliquam mi,eget euismod sem scelerisque ut.</h4>
+    <p class="p1">Posted by <a class="red" href="">Admin</a> in <a class="red" href="">wordpress
+</a>   &nbsp; <a href=""><img src="img/QQ截图20161111162848.png"></a>
+    <a class="red" href=""> Des gn, Template</a>
+    <a  class="red" href=""><img src="img/QQ截图20161111162908.png"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="red" href="">22</a>
+    </p>
+    <p class="p2">
+This morning, he's going to walk down the front steps, wave his hand and start on his great adventure that will what will <br>
+   This morning, he's going to walk down the front steps, wave his hand and start on his great adventure that will  what will <br>
+    This morning, he's going to walk down the front steps, wave his hand and start on his great adventure that will  what will <br>
+   This morning, he's going to walk down the front steps, wave his <br>
+    </p>
+    <p class="p3"><a href="">Contunite reading</a> <a href=""><b>→</b></a></p>
+    </div>
+    </div>
+    
+<!-- 第4部分 -->
+    
+    <div class="clearfloat">
+  </div>
+    <div class="mainbody1">
+  <div class="mainleft">
+  <ul>
+  <div class="yema1">
+    <li>
+    <p>
+    <a class="size3" href="">MAY</a>
+    </p>
+    <p>
+    <a class="size4" href="">19</a>
+    </p>
+    </li>
+    </div>
+    <div class="yema2">
+    <li><a href=""><img src="img/QQ截图20161111190848.png" ></a>
+    </li>
+    </div>
+    </ul>
+    
+  </div>
+  
+   <div class="center">
+  <div id="container">
+    <div id="list" style="left: -770px;">
+       <img src="img/c3ebd91a9d5a88532033589a52ffa177.jpg" alt="1"/>
+        <img src="img/975155b88d6ba13abfbea5ec97d56ba9.jpeg" alt="1"/>
+        <img src="img/7339d5339f695ac978a737bc6a01ef78.jpeg" alt="2"/>
+        <img src="img/46c3d8ce926988a624bf9192f6350ce5.jpeg" alt="3"/>
+        <img src="img/0c7b1d6bce688a85fb641eced28b786d.jpeg" alt="4"/>
+        <img src="img/c3ebd91a9d5a88532033589a52ffa177.jpg" alt="5"/>
+        <img src="img/975155b88d6ba13abfbea5ec97d56ba9.jpeg" alt="5"/>
+
+    </div>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+</div>
+
+
+    <h4>Duis daapobus aliquam mi,eget euismod sem scelerisque ut.</h4>
+    <p class="p1">Posted by <a class="red" href="">Admin</a> in <a class="red" href="">Phtography
+</a>   &nbsp; <a href=""><img src="img/QQ截图20161111162848.png"></a>
+    <a class="red" href=""> Photo</a>
+    <a  class="red" href=""><img src="img/QQ截图20161111162908.png"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="red" href="">22</a>
+    </p>
+    
+    </div>
+    </div>
+
+   <!-- 第5部分 -->
+     <div class="clearfloat">
+  </div>
+    <div class="mainbody1">
+  <div class="mainleft">
+  <ul>
+  <div class="yema1">
+    <li>
+    <p>
+    <a class="size3" href="">MAY</a>
+    </p>
+    <p>
+    <a class="size4" href="">16</a>
+    </p>
+    </div>
+    
+    </li>
+    <div class="yema2">
+    <li><a href=""><img src="img/QQ截图20161111190141.png"></a>
+    </li>
+     </div>
+    </ul>
+   
+  </div>
+  
+   <div class="center">
+  
+    <video wdith="770" height="300" controls src="/i/movie.ogg">
+Your browser does not support the video tag.
+</video>
+    <h4>Duis daapobus aliquam mi,eget euismod sem scelerisque ut.</h4>
+    <p class="p1">Posted by <a class="red" href="">Admin</a> in <a class="red" href="">Video
+</a>   &nbsp; <a href=""><img src="img/QQ截图20161111162848.png"></a>
+    <a class="red" href=""> Nature</a>
+    <a  class="red" href=""><img src="img/QQ截图20161111162908.png"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="red" href="">22</a>
+    </p>
+    </div>
+    </div>
+    
+    <!-- 第6部分 -->
+     <div class="clearfloat">
+  </div>
+    <div class="mainbody1">
+  <div class="mainleft">
+  <ul>
+  <div class="yema1">
+    <li>
+    <p>
+    <a class="size3" href="">MAY</a>
+    </p>
+    <p>
+    <a class="size4" href="">19</a>
+    </p>
+    </li>
+    </div>
+    <div class="yema2">
+    <li><a href=""><img src="img/QQ截图20161111190153.png"></a>
+    </li>
+    </div>
+    </ul>
+    
+  </div>
+  
+   <div class="center">
+  
+   
+    <h4 style="margin:0">Duis daapobus aliquam mi,eget euismod sem scelerisque ut.</h4>
+    <p class="p1">Posted by <a class="red" href="">Admin</a> in <a class="red" href="">Video
+</a>   &nbsp; <a href=""><img src="img/QQ截图20161111162848.png"></a>
+    <a class="red" href=""> Nature</a>
+    <a  class="red" href=""><img src="img/QQ截图20161111162908.png"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="red" href="">22</a>
+    </p>
+    <p class="p2">
+   This morning, he's going to walk down the front steps, wave his hand and start on his great adventure that will what will <br>
+   This morning, he's going to walk down the front steps, wave his hand and start on his great adventure that will  what will <br>
+    This morning, he's going to walk down the front steps, wave his hand and start on his great adventure that will  what will <br>
+   This morning, he's going to walk down the front steps, wave his <br>
+    </p>
+    </div>
+    </div>
+    <!-- 第7部分 -->
+     <div class="clearfloat">
+  </div>
+    <div class="mainbody1">
+  <div class="mainleft">
+  <ul>
+  <div class="yema1">
+    <li>
+    <p>
+    <a class="size3" href="">MAY</a>
+    </p>
+    <p>
+    <a class="size4" href="">12
+    </a>
+    </p>
+    </li>
+    </div>
+    <div class="yema2">
+    <li><a href=""><img src="img/QQ截图20161111190209.png"></a>
+    </li>
+    </div>
+    </ul>
+    
+  </div>
+  
+  
+   <div class="center">
+  
+    <audio  src="/i/song.ogg" controls>
+Your browser does not support the audio element.
+</audio>
+    <h4>Duis daapobus aliquam mi,eget euismod sem scelerisque ut.</h4>
+    <p class="p1">Posted by <a class="red" href="">Admin</a> in <a class="red" href="">Audio
+</a>   &nbsp; <a href=""><img src="img/QQ截图20161111162848.png"></a>
+    <a class="red" href=""> Nature</a>
+    <a  class="red" href=""><img src="img/QQ截图20161111162908.png"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="red" href="">22</a>
+    </p>
+    </div>
+    </div>
+    </div>
+    <!--最右边部分-->
+    <div class="mainbodyright">
+    <div class="mainbodyright1">
+    <h8>CATEGORIES</h8>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113104601.png">LOGO DESIGN</a></p>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113104601.png">WEB DESIGR</a></p>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113104601.png">PHOTOGRAPHY</a></p>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113104601.png">WORDPRESS</a></p>
+    <p> <a class="size10" href=""><img  class="duiqi" src="img/QQ截图20161113104601.png">ICONS</a></p>
+    </div>
+    <div class="mainbodyright2">
+    <h8>RECENT POSTS</h8>
+    <p> <a class="size10" href=""><span style="color:rgb(193,221,218)">></span>
+    <span class="rightsize1">Curabitur vitae velit</span>
+    
+    <span class="rightsize2">25 May 2013</span>
+    </a></p>
+    <p> <a class="size10" href=""><span style="color:rgb(193,221,218)">></span>
+    <span class="rightsize1">Vicamus at elit quis urna </span>
+    <span class="rightsize3"> adipiscing iaculis</span>
+    
+    <span class="rightsize2">25 May 2013</span>
+    </a></p>
+    
+    <p> <a class="size10" href=""><span style="color:rgb(193,221,218)">></span>
+    <span class="rightsize1">Curabitur vitae velit</span>
+    
+    <span class="rightsize2">25 May 2013</span>
+    </a></p>
+    
+     <p> <a class="size10" href=""><span style="color:rgb(193,221,218)">></span>
+    <span class="rightsize1">Vicamus at elit quis urna</span> 
+     <span class="rightsize3">adipiscing iaculis</span>
+    
+    <span class="rightsize2">25 May 2013</span>
+    </a></p>
+    
+    
+    </div>
+    
+    <div class="mainbodyright3">
+    <h8>TAGS</h8>
+    <div>
+    <a class="tags">Maeceas</a><a class="tags">Nunc</a><a class="tags">Praesent</a></div>
+    <div>
+    <a class="tags">Nunc</a><a class="tags">Praesent</a><a class="tags">Nunc</a>
+    </div>
+    <div>
+    <a class="tags">Maecenas</a><a class="tags">Praesennt</a><a class="tags">Nunc</a>
+    </div>
+    </div>
+    
+    <div class="mainbodyright4">
+    <h8>ABCHIVE</h8>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113140846.png">2013</a></p>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113140846.png">2012</a></p>
+    <p> <a class="size10" href=""><img class="duiqi" src="img/QQ截图20161113140846.png">2011</a></p>
+    </div>
+    
+    
+    </div>
+    </div>
+     <div class="clearfloat">
+  </div>
+  
+    
+<!--页码部分-->
+
+    <div id="blue">
+    <ul class="blue">
+    <li><a class="teshu1" href=""> < </a></li>
+    <li><a href="">1</a></li>
+    <li><a style="background:rgb(100,151,146)" class="teshu2" href="">2</a></li>
+    <li><a href="">3</a></li>
+    <li><a href="">4</a></li>
+    <li><a href="">5</a></li>
+    <li><a href="">...</a></li>
+    <li><a href="">10</a></li>
+    <li><a href="">11</a></li>
+    <li><a href="">12</a></li>
+    <li><a style="margin-left:15px" href="">> </a></li>
+    </ul>
+    </div>
+    
+    <!--末尾部分1-->
+    <div id="footer1">
+    <div class="footers1">
+    <h5>MODUS versus</h5>
+    <p class="size5">Lorem ipsum dolor sit amet,consecttur adipiscing elit.Nam<br>
+    viverra euismod odio,gravida pellentesque urna varius vitae.<br>
+    Sed dui lorem,adipiscing in adipiscing et,interdun nec.
+    <br>
+    <br>
+    Phone:<span class="big">182 2569 5896</span><br>
+    e-mail: <span class="big">info@modu.versus</span>
+    </span>
+    
+    </div>
+    <div class="footers2">
+    
+    <h6>Company</h6>
+    <p ><a class="size6" href="">> About</a></p>
+    <p ><a class="size6" href="">> FAQ</a></p>
+    <p ><a class="size6" href="">> Contact</a></p>
+    <p ><a class="size6" href="">> Terrrs</a></p>
+    <p ><a class="size6" href="">> Privacy</a></p>
+    <p ><a class="size6" href="">> Testimonials</a></p>
+    
+    
+    </div>
+    <div class="footers3">
+    <h6>Community</h6>
+    <p ><a class="size6" href="">>  Blog</a></p>
+    <p ><a class="size6" href="">>  Forum</a></p>
+    <p ><a class="size6" href="">>  Support</a></p>
+    <p ><a class="size6" href="">>  Newsletter</a></p>
+    </div>
+    <div class="footers4">
+    <h7>from the<b> BLOG</b></h7>
+    <div class="footers5">
+    <a class="imgleft" href=""><img src="" width="70" height="70"></a>
+    <div class="hanxuan2">
+    <p class="size7"> Lorem ipsum dolor sit amet,consectetur<br>adipiscing elit    </p>
+    <p class="size8">26 May,2013</p>
+    </div>
+    </div>
+    <div class="clearfloat">
+  </div>
+    <div class="footers6">
+    <a class="imgleft" href=""><img src="" width="70" height="70"></a>
+    <div class="hanxuan2">
+    <p class="size7"> Lorem ipsum dolor sit amet,consectetur<br>adipiscing elit</p>
+    <p class="size8">26 May,2013</p>
+    </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <div id="footer2">
+   <span class="size9">2013 ModusVersus</span>
+   <img class="imgright" src="img/QQ截图20161112210526.png" >
+   <img class="imgright" src="img/QQ截图20161112210512.png">
+   <img class="imgright" src="img/QQ截图20161112210451.png" >
+   
+  
+   <img class="imgright" src="img/QQ截图20161112210429.png">
+   </div>
+       
+    
+
+  
+    
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+        
+
+
+
+
+
+</body>
+</html>

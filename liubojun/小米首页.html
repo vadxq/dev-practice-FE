@@ -4,6 +4,77 @@
 	<title>MIUI官方论坛-MIUI论坛</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" href="index.css" type="text/css">
+	<script type="text/javascript">
+	window.onload=function ( ) {
+		var container=document.getElementById('py_lunbo');
+		var prev=document.getElementById('prev');
+		var next=document.getElementById('next');
+		var list=document.getElementById('img_left');
+		var interval=3000;
+		var len=4;
+		var index=1;
+		var animated=false;
+		var timer;
+		function animate(offset) {
+				if(offset == 0) {
+					return;
+				}
+				animated=true;
+			var inteval=300;
+			var time=10;
+			var left=parseInt(list.style.left) + offset;
+			var speed=offset/(inteval/time);
+			var go=function () {				
+				if ((speed > 0 && parseInt(list.style.left) < left) || (speed<0 && parseInt(list.style.left)>left)) {
+					list.style.left = parseInt(list.style.left)+speed+'px';
+					setTimeout(go,time);
+				} else {
+					list.style.left=left;
+					if (left>-960) {
+						list.style.left=-960*len+'px';
+					}
+					if (left<-960*len) {
+						list.style.left='-960px';
+					}
+					animated=false;
+				}
+			}
+			go();
+		}
+		prev.onclick=function () {
+			if(animated) {
+				return;
+			}
+			if(index==1){
+				index=4;
+			}else{
+				index++;
+			}
+			animate(960);
+		}
+		next.onclick=function () {
+			if(animated) {
+				return;
+			}
+			if(index==4){
+				index=1;
+			}else{
+				index++;
+			}
+			animate(-960);
+		}
+
+		function play() {
+			timer=setTimeout(function () {next.onclick();play()},interval);
+		}
+		function stop() {
+			clearTimeout(timer);
+		}	
+		container.onmouseover=stop;
+		container.onmouseout=play;
+		play();
+	}
+	</script>
 </head>
 <body>
 	<div id="hd">
@@ -82,20 +153,34 @@
 	</div>
 	<div id="wp" class="wp">
 		<div class="main">
-			<div class="py_lunbo">
-				<div class="py_lunbo_container">
-					<div class="prev"></div>
-					<div class="next"></div>
-					<a href="#">
+			<div id="py_lunbo" class="py_lunbo">
+				<div id="img_left" class="py_lunbo_container" style="left:-960px">
+					<a  href="#">
+						<img src="pic/photo4.png" alt="懒卓福利专场" title="懒卓福利专场" />
+					</a>
+					<a  href="#">	
+						<img src="pic/photo1.jpg" alt="懒卓福利专场" title="懒卓福利专场" />
+					</a>
+					<a  href="#">
+						<img src="pic/photo2.png" alt="懒卓福利专场" title="懒卓福利专场" />
+					</a>
+					<a  href="#">
+						<img src="pic/photo3.png" alt="懒卓福利专场" title="懒卓福利专场" />
+					</a>
+					<a  href="#">
+						<img src="pic/photo4.png" alt="懒卓福利专场" title="懒卓福利专场" />
+					</a>
+					<a  href="#">
 						<img src="pic/photo1.jpg" alt="懒卓福利专场" title="懒卓福利专场" />
 					</a>
 				</div>
-				
+				<div id="prev" class="prev"></div>
+				<div id="next" class="next"></div>
 				<div class="points"> 
-					<div class="current_pointer"></div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div index="1" class="current_pointer"></div>
+					<div index="2" class></div>
+					<div index="3" class></div>
+					<div index="4" class></div>
 				</div>
 			</div>
 			<div class="banner_links">

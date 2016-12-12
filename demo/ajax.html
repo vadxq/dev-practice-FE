@@ -34,7 +34,6 @@
     <button id="getMsg">获取信息</button>
     <div id="zhihu"></div>
   </div>
-
   <script>
   var ajax = function(method, url, cb, data, dataType) {
     var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP')
@@ -69,7 +68,7 @@
   var query = function(one) {
     return document.querySelector(one)
   }
-  var useMsg = function () {
+  var useMsg = function() {
     ajax('get', 'https://api.github.com/', callMsg)
   }
 
@@ -80,17 +79,17 @@
     alert('lalalala')
   }
 
-  var loginUs = function () {
+  var loginUs = function() {
     var data = {
       name: query('.name').value,
       password: query('.password').value
     }
     var jsonData = JSON.stringify(data)
-    ajax('post', '', login, jsonData)
+    ajax('post', 'https://api.github.com/', login, jsonData)
   }
-  var login = function (data) {
+  var login = function(data) {
     var jsonData = JSON.parse(data)
-    console.log(data)
+    console.log(jsonData);
   }
 
   // 调用ajax

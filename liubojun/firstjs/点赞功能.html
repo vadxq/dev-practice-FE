@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>点赞效果</title>
+  <style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: punctuation, "PingFangSC-Regular", "Microsoft Yahei", "sans-serif";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .clearfix:after {
+    clear: both;
+    visibility: hidden;
+    content: "";
+    display: block;
+    height: 0;
+  }
+  
+  #list {
+    width: 530px;
+    margin: 20px auto 20px;
+  }
+  
+  .box {
+    padding-top: 20px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  .box img {
+    float: left;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .box .content {
+    float: right;
+    width: 450px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .content div {
+    margin-bottom: 10px;
+  }
+  
+  .txt {
+    margin-bottom: 10px;
+    color: #403e3b;
+    font-size: 14px;
+  }
+  
+  .txt a {
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  
+  img.pic {
+    width: 256px;
+    height: 274px;
+  }
+  
+  .info span {
+    float: left;
+    color: #99958d;
+  }
+  
+  .info a {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .praises_total {
+    background-color: #eeebe2;
+    line-height: 25px;
+  }
+  </style>
+  <script type="text/javascript">
+  window.onload = function() {
+    var list = document.getElementById('list')
+    var lis = list.children
+
+    function praiseBox(box, el) {
+      var praiseElement = box.getElementsByClassName('praises_total')[0]
+      var oldTotal = parseInt(praiseElement.getAttribute('total'))
+      var txt = el.innerHTML
+      var newTotal
+      if (txt == '赞') {
+        newTotal = oldTotal + 1
+        praiseElement.innerHTML = (newTotal == 1) ? ' 我觉得很赞' : '我和' + oldTotal + '个人觉得很赞'
+        el.innerHTML = '取消赞'
+      } else {
+        newTotal = oldTotal - 1
+        praiseElement.innerHTML = (newTotal == 0) ? '' : newTotal + '个人觉得很赞'
+        el.innerHTML = '赞'
+      }
+      praiseElement.setAttribute('total', newTotal)
+      praiseElement.style.display = (newTotal == 0) ? 'none' : 'block'
+    }
+    for (var i = 0; i < lis.length; i++) {
+      lis[i].onclick = function(e) {
+        e = e || window.event
+        var el = e.srcElement
+        switch (el.className) {
+          case 'praise':
+            praiseBox(el.parentNode.parentNode.parentNode, el)
+            break
+        }
+      }
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <ul id="list">
+    <li class="box clearfix">
+      <img src="..\pic\53_avatar_middle.jpg" alt="" />
+      <div class="content">
+        <div class="main clearfix">
+          <p class="txt">
+            <a href="#" class="user">Andy:</a>哈哈哈哈哈哈哈哈哈哈哈；哈哈哈哈哈哈哈哈哈哈哈哈哈。
+          </p>
+          <img class="pic" src="..\pic\photo2.png" alt="" />
+        </div>
+        <div class="info clearfix">
+          <span class="time">12-6 23:01</span>
+          <a class="praise" href="javascript:;">赞</a>
+        </div>
+        <div class="praises_total" total="4" style="display:block;">4个人觉得很赞</div>
+      </div>
+    </li>
+    <li class="box clearfix">
+      <img src="..\pic\53_avatar_middle.jpg" alt="" />
+      <div class="content">
+        <div class="main clearfix">
+          <p class="txt">
+            <a href="#" class="user">Andy:</a>哈哈哈哈哈哈哈哈哈哈哈；哈哈哈哈哈哈哈哈哈哈哈哈哈。
+          </p>
+          <img class="pic" src="..\pic\photo2.png" alt="" />
+        </div>
+        <div class="info clearfix">
+          <span class="time">12-6 23:01</span>
+          <a class="praise" href="javascript:;">赞</a>
+        </div>
+        <div class="praises_total" total="0" style="display:none;"></div>
+      </div>
+    </li>
+  </ul>
+</body>
+
+</html>

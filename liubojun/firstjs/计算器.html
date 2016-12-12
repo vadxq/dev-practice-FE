@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+ 
+            font-size:12px;
+        }
+        #panel {
+            width: 185px;
+        }
+        .np,.np_1 {
+            cursor: pointer;
+            display: block;
+            float: left;
+            width: 30px;
+            height: 24px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 24px;
+            border: 1px solid #f2f2f2;
+            background-color: #f2f2f2;
+            color: #999; 
+            margin-left: 7px;
+            outline: none;
+        }
+        #con p {
+            margin: 10px 5px;
+        }
+        #con input {
+            margin-left: 7px;
+            height: 20px;
+            padding: 3px;
+            outline: none;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function ( ) {
+            var tmp = 0;
+            var result = 0;
+            var a = 6;
+            calculator = function (type) {    
+                var num1 = Number(document.getElementById('cn1').value);
+                var num2 = Number(document.getElementById('cn2').value);
+                if(num1=="" || num2==""){
+                    return;
+                } 
+                a=type; 
+                switch(type) {
+                    case 0: result=num1+num2;break;
+                    case 1: result=num1-num2;break;
+                    case 2: result=num1*num2;break;
+                    case 3: result=num1/num2;break;
+                    case 4: result=num1%num2;break;
+                }
+            } 
+            isOnclick = function (i) {
+                tmp = i;
+            }
+            clean = function ( ) {
+                for(i = 0; i < 3; i++) {
+                   document.getElementsByName('cn_1')[i].value="";
+                }
+                tmp = 0;
+            }
+            press = function (i) {
+                if(tmp == 1){
+                    document.getElementById('cn1').value += String(document.getElementsByName('con_1')[i].value);
+                }else if(tmp == 2) {
+                    document.getElementById('cn2').value += String(document.getElementsByName('con_1')[i].value);
+                }else {
+                    return;
+                }
+            }
+            dengyu = function ( ) {
+                if(a == 6){
+                    document.getElementById('cn3').value="你还没选择运算符号";
+                }else {
+                    document.getElementById('cn3').value=result;
+                }
+                tmp = 0;
+            }
+            backTo = function() {
+                if(tmp == 1){
+                    var mystr = document.getElementById('cn1').value;
+                    mystr = mystr.substring(0,mystr.length-1);
+                    document.getElementById('cn1').value = mystr;
+                }else if(tmp == 2) {
+                    var mystr = document.getElementById('cn2').value;
+                    mystr = mystr.substring(0,mystr.length-1);
+                    document.getElementById('cn2').value = mystr;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="con" action="">
+        <p>第一个数：</p>
+        <input type="text" id="cn1" name="cn_1" value="" onclick="isOnclick(1)" />
+        <p>第二个数：</p>
+        <input type="text" id="cn2" name="cn_1" value="" onclick="isOnclick(2)" />
+        <p>计算结果：</p>
+        <input type="text" id="cn3" name="cn_1" readonly="readonly" />
+    </form>
+    <div id="panel">
+        <input type="button" class="np" value="+" onclick="calculator(0)" />
+        <input type="button" class="np" value="-" onclick="calculator(1)" />
+        <input type="button" class="np" value="×" onclick="calculator(2)" />
+        <input type="button" class="np" value="÷" onclick="calculator(3)" />
+        <input type="button" class="np" value="%" onclick="calculator(4)" />
+        <input type="button" class="np_1" name="con_1" value="1" onclick="press(0)"/>
+        <input type="button" class="np_1" name="con_1" value="2" onclick="press(1)"/>
+        <input type="button" class="np_1" name="con_1" value="3" onclick="press(2)"/>
+        <input type="button" class="np_1" name="con_1" value="4" onclick="press(3)"/>
+        <input type="button" class="np_1" name="con_1" value="5" onclick="press(4)"/>
+        <input type="button" class="np_1" name="con_1" value="6" onclick="press(5)"/>
+        <input type="button" class="np_1" name="con_1" value="7" onclick="press(6)"/>
+        <input type="button" class="np_1" name="con_1" value="8" onclick="press(7)"/>
+        <input type="button" class="np_1" name="con_1" value="9" onclick="press(8)"/>
+        <input type="button" class="np_1" name="con_1" value="0" onclick="press(9)"/>
+        <input type="button" class="np_1" name="con_1" value="." onclick="press(10)"/>
+        <input type="button" class="np_1" name="con_1" value="=" onclick="dengyu( )"/>
+        <input type="button" class="np" value="C" onclick="clean()"/>
+        <input type="button" class="np" name="con_1" value="&larr;" onclick="backTo()"/>
+    </div>
+</body>
+</html>
