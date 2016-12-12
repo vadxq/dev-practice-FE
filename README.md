@@ -19,15 +19,20 @@ About
 
 ######目录
 
---dev-practice-FE
+```
+dev-practice-FE
 
------yours
+├── yours filename
+│    └── first practice
+│    │
+│    └── second practice
+│
+├── others filename
+│
+└── demo //当别人问一些东西我会改动放在在这里/还有一些psd静态资源
 
---------first你的第一个练习
+```
 
---------second你的第二个练习
-
------others
 
 * pull request 
 * pull request 如何更新代码或者提交代码，请看此教程：[如何在github上fork一个项目来贡献代码以及同步原作者的修改](http://www.360doc.com/content/13/0410/18/2569758_277424931.shtml)
