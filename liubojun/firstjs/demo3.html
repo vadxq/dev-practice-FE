@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+<head> 
+  <title>js实现简单留言板</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <style type="text/css">
+    *{
+      margin: 0 auto;
+      padding: 0;
+      font-family: "Microsoft YaHei","sans-serif";
+    }
+    .container{
+      width: 400px;
+      height: auto;
+    }
+    .text{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .btn{
+      margin-right: 30px;
+      float: right;
+    }
+    #messageList{
+      width: 100%;
+      height: 100%;
+    }
+    .txt{
+      color: gray;
+      opacity: 0.8;
+      filter:alpha(opacity=0.8);
+    }
+  </style>
+  <script type="text/javascript">
+    /**
+     *文档加载完后，运行名为func的函数
+     *@param func 需要运行的函数的名
+     *说明：window.onload事件处理函数的值存入变量oldonload;如果函数上没有绑定任何函数，则正常添
+     *加；若已经绑定有函数，则添加到指令末尾。
+     */
+     function addLoadEvent(func){
+         var oldonload = window.onload; //得到上一个onload事件的函数
+         if(typeof window.onload != 'function'){
+             window.onload = func;
+         }else{
+            window.onload = function(){
+              oldonload(); //调用之前覆盖的onload事件的函数
+              func(); //调用当前事件函数
+            }
+         }
+     }
+     function getMessage(){
+        var btn = document.getElementById("btn1");
+        var message = document.getElementById("message");
+        var name = document.getElementById("name");
+        var nameValue = "";
+        var messageValue = "";
+        name.onfocus = function(){
+            name.value="";
+        }
+        message.onfocus = function(){
+            message.value="";
+        }
+        btn.onclick = function(){
+            messageValue =  message.value || "我的小站：www.ido321.com"; //设置默认值
+            nameValue = name.value || "dwqs";
+            var msgList = document.getElementById("messageList");
+            var msgDiv = document.createElement("div");
+            var msgTxt = document.createTextNode(nameValue+"说："+messageValue);
+            msgDiv.appendChild(msgTxt);
+            msgList.appendChild(msgDiv);
+        }
+     }
+     addLoadEvent(getMessage);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+    <!-- <form action="?" method="?"> -->
+      <div class="text">
+        <label for="message">js简单留言板(置空可以查看默认的留言内容)</label>
+      </div>
+      <div class="text" style="margin--75px"> 
+        <label for="name">昵称：</label> 
+        <input type="text" id="name" value="昵称(默认是dwqs)" class="txt">
+      </div>
+      <div class="text">
+        <textarea rows="5" cols="30" id="message" value="" class="txt">给我留言(默认留言内容：我的小站：www.ido321.com)
+        </textarea>
+      </div>
+      <div class="btn">
+      <!-- <input type="submit" id="submit" value="提交留言"> -->
+        <button id="btn1">提交留言</button>
+      </div>
+      <!-- </form> -->
+    </div>
+      <h3 style="cright">留言列表</h3>
+      <hr/>
+      <div class="messageList" id="messageList">
+      </div>
+  </div>
+ </body>
+ </html>

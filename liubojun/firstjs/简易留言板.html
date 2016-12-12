@@ -28,7 +28,8 @@
 			x.value="";
 			var deleteSpan = document.getElementsByTagName('span');
 			for (var i = 0 ;i < deleteSpan.length; i++){
-				deleteSpan[i].onclick = function ( ) {
+				deleteSpan[i].onclick = function ( )
+				 {
 					oldNode.removeChild(this.parentNode);
 				}
 			}

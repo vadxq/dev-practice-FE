@@ -110,15 +110,14 @@
     }
     for (var i = 0; i < lis.length; i++) {
       lis[i].onclick = function(e) {
-        e = e || window.event;
-        var el = e.srcElement;
+        e = e || window.event
+        var el = e.srcElement
         switch (el.className) {
           case 'praise':
             praiseBox(el.parentNode.parentNode.parentNode, el)
             break
         }
       }
-      p
     }
   }
   </script>
